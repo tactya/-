@@ -1,0 +1,58 @@
+.ios18 .status-bar {
+  padding: 0 35px 0 42px;
+  height: var(--ios-safe-top);
+}
+.ios18 .status-bar > .status-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: -0.45px;
+  font-variant-numeric: tabular-nums;
+  line-height: 20px;
+}
+.ios18 .status-silent {
+  width: 13px;
+  height: 17px;
+  flex: none;
+}
+.ios18 .status-bar > .signals {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.ios18 .signals .status-cellular {
+  width: 20px;
+  height: 15px;
+}
+.ios18 .signals .status-wifi {
+  width: 18px;
+  height: 16px;
+}
+.ios18 .signals .ios-battery {
+  width: 25px;
+  height: 14px;
+  border: 0;
+  border-radius: 4.5px;
+  background: color-mix(in srgb, currentColor 28%, transparent);
+  overflow: visible;
+}
+.ios18 .signals .ios-battery > span {
+  border-radius: 4.5px;
+  opacity: 1;
+}
+.ios18 .signals .ios-battery > b {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.3px;
+}
+.ios18 .signals .ios-battery::after {
+  right: -3px;
+  top: 4.5px;
+  height: 5px;
+}
+.ios18 .signals .ios-battery.low-battery > span {
+  background: #ffd60a;
+}

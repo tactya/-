@@ -1,0 +1,829 @@
+[
+  {
+    "name": "@tiptap/core",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/core"
+    }
+  },
+  {
+    "name": "@tiptap/extension-blockquote",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-blockquote"
+    }
+  },
+  {
+    "name": "@tiptap/extension-bold",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-bold"
+    }
+  },
+  {
+    "name": "@tiptap/extension-bullet-list",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-bullet-list"
+    }
+  },
+  {
+    "name": "@tiptap/extension-code",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-code"
+    }
+  },
+  {
+    "name": "@tiptap/extension-code-block",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-code-block"
+    }
+  },
+  {
+    "name": "@tiptap/extension-document",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-document"
+    }
+  },
+  {
+    "name": "@tiptap/extension-dropcursor",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages-deprecated/extension-dropcursor"
+    }
+  },
+  {
+    "name": "@tiptap/extension-gapcursor",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages-deprecated/extension-gapcursor"
+    }
+  },
+  {
+    "name": "@tiptap/extension-hard-break",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-hard-break"
+    }
+  },
+  {
+    "name": "@tiptap/extension-heading",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-heading"
+    }
+  },
+  {
+    "name": "@tiptap/extension-horizontal-rule",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-horizontal-rule"
+    }
+  },
+  {
+    "name": "@tiptap/extension-italic",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-italic"
+    }
+  },
+  {
+    "name": "@tiptap/extension-link",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-link"
+    }
+  },
+  {
+    "name": "@tiptap/extension-list",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-list"
+    }
+  },
+  {
+    "name": "@tiptap/extension-list-item",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-list-item"
+    }
+  },
+  {
+    "name": "@tiptap/extension-list-keymap",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-list-keymap"
+    }
+  },
+  {
+    "name": "@tiptap/extension-ordered-list",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-ordered-list"
+    }
+  },
+  {
+    "name": "@tiptap/extension-paragraph",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-paragraph"
+    }
+  },
+  {
+    "name": "@tiptap/extension-strike",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-strike"
+    }
+  },
+  {
+    "name": "@tiptap/extension-text",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-text"
+    }
+  },
+  {
+    "name": "@tiptap/extension-underline",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension-underline"
+    }
+  },
+  {
+    "name": "@tiptap/extensions",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/extension"
+    }
+  },
+  {
+    "name": "@tiptap/pm",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/pm"
+    }
+  },
+  {
+    "name": "@tiptap/react",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/react"
+    }
+  },
+  {
+    "name": "@tiptap/starter-kit",
+    "version": "3.32.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ueberdosis/tiptap",
+      "directory": "packages/starter-kit"
+    }
+  },
+  {
+    "name": "@types/d3-color",
+    "version": "3.1.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/d3-color"
+    }
+  },
+  {
+    "name": "@types/d3-drag",
+    "version": "3.0.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/d3-drag"
+    }
+  },
+  {
+    "name": "@types/d3-interpolate",
+    "version": "3.0.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/d3-interpolate"
+    }
+  },
+  {
+    "name": "@types/d3-selection",
+    "version": "3.0.12",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/d3-selection"
+    }
+  },
+  {
+    "name": "@types/d3-transition",
+    "version": "3.0.9",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/d3-transition"
+    }
+  },
+  {
+    "name": "@types/d3-zoom",
+    "version": "3.0.9",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/d3-zoom"
+    }
+  },
+  {
+    "name": "@types/use-sync-external-store",
+    "version": "0.0.6",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/use-sync-external-store"
+    }
+  },
+  {
+    "name": "@xyflow/react",
+    "version": "12.12.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/xyflow/xyflow.git",
+      "directory": "packages/react"
+    }
+  },
+  {
+    "name": "@xyflow/system",
+    "version": "0.0.83",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/xyflow/xyflow.git",
+      "directory": "packages/system"
+    }
+  },
+  {
+    "name": "classcat",
+    "version": "5.0.5",
+    "license": "MIT",
+    "repository": "jorgebucaran/classcat"
+  },
+  {
+    "name": "core-util-is",
+    "version": "1.0.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/isaacs/core-util-is"
+    }
+  },
+  {
+    "name": "d3-color",
+    "version": "3.1.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-color.git"
+    }
+  },
+  {
+    "name": "d3-dispatch",
+    "version": "3.0.1",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-dispatch.git"
+    }
+  },
+  {
+    "name": "d3-drag",
+    "version": "3.0.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-drag.git"
+    }
+  },
+  {
+    "name": "d3-ease",
+    "version": "3.0.1",
+    "license": "BSD-3-Clause",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-ease.git"
+    }
+  },
+  {
+    "name": "d3-interpolate",
+    "version": "3.0.1",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-interpolate.git"
+    }
+  },
+  {
+    "name": "d3-selection",
+    "version": "3.0.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-selection.git"
+    }
+  },
+  {
+    "name": "d3-timer",
+    "version": "3.0.1",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-timer.git"
+    }
+  },
+  {
+    "name": "d3-transition",
+    "version": "3.0.1",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-transition.git"
+    }
+  },
+  {
+    "name": "d3-zoom",
+    "version": "3.0.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/d3/d3-zoom.git"
+    }
+  },
+  {
+    "name": "dexie",
+    "version": "4.4.7",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dexie/Dexie.js.git"
+    }
+  },
+  {
+    "name": "fast-equals",
+    "version": "5.4.5",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/planttheidea/fast-equals.git"
+    }
+  },
+  {
+    "name": "framer-motion",
+    "version": "12.43.0",
+    "license": "MIT",
+    "repository": "https://github.com/motiondivision/motion/"
+  },
+  {
+    "name": "immediate",
+    "version": "3.0.6",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/calvinmetcalf/immediate.git"
+    }
+  },
+  {
+    "name": "inherits",
+    "version": "2.0.4",
+    "license": "ISC",
+    "repository": "git://github.com/isaacs/inherits"
+  },
+  {
+    "name": "isarray",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/juliangruber/isarray.git"
+    }
+  },
+  {
+    "name": "jszip",
+    "version": "3.10.2",
+    "license": "(MIT OR GPL-3.0-or-later)",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Stuk/jszip.git"
+    }
+  },
+  {
+    "name": "lie",
+    "version": "3.3.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/calvinmetcalf/lie.git"
+    }
+  },
+  {
+    "name": "linkifyjs",
+    "version": "4.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/nfrasser/linkifyjs.git",
+      "directory": "packages/linkifyjs"
+    }
+  },
+  {
+    "name": "lucide-react",
+    "version": "0.468.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lucide-icons/lucide.git",
+      "directory": "packages/lucide-react"
+    }
+  },
+  {
+    "name": "motion",
+    "version": "12.43.0",
+    "license": "MIT",
+    "repository": "https://github.com/motiondivision/motion"
+  },
+  {
+    "name": "motion-dom",
+    "version": "12.43.0",
+    "license": "MIT",
+    "repository": "https://github.com/motiondivision/motion"
+  },
+  {
+    "name": "motion-utils",
+    "version": "12.39.0",
+    "license": "MIT",
+    "repository": "https://github.com/motiondivision/motion"
+  },
+  {
+    "name": "orderedmap",
+    "version": "2.1.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/marijnh/orderedmap.git"
+    }
+  },
+  {
+    "name": "pako",
+    "version": "1.0.11",
+    "license": "(MIT AND Zlib)",
+    "repository": "nodeca/pako"
+  },
+  {
+    "name": "process-nextick-args",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/calvinmetcalf/process-nextick-args.git"
+    }
+  },
+  {
+    "name": "prosemirror-changeset",
+    "version": "2.4.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/prosemirror/prosemirror-changeset.git"
+    }
+  },
+  {
+    "name": "prosemirror-commands",
+    "version": "1.7.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/prosemirror/prosemirror-commands.git"
+    }
+  },
+  {
+    "name": "prosemirror-dropcursor",
+    "version": "1.8.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/prosemirror/prosemirror-dropcursor.git"
+    }
+  },
+  {
+    "name": "prosemirror-gapcursor",
+    "version": "1.4.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/prosemirror/prosemirror-gapcursor.git"
+    }
+  },
+  {
+    "name": "prosemirror-history",
+    "version": "1.5.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/prosemirror/prosemirror-history.git"
+    }
+  },
+  {
+    "name": "prosemirror-inputrules",
+    "version": "1.5.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/prosemirror/prosemirror-inputrules.git"
+    }
+  },
+  {
+    "name": "prosemirror-keymap",
+    "version": "1.2.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/prosemirror/prosemirror-keymap.git"
+    }
+  },
+  {
+    "name": "prosemirror-model",
+    "version": "1.25.12",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/prosemirror/prosemirror-model.git"
+    }
+  },
+  {
+    "name": "prosemirror-schema-list",
+    "version": "1.5.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/prosemirror/prosemirror-schema-list.git"
+    }
+  },
+  {
+    "name": "prosemirror-state",
+    "version": "1.4.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/prosemirror/prosemirror-state.git"
+    }
+  },
+  {
+    "name": "prosemirror-tables",
+    "version": "1.8.5",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ProseMirror/prosemirror-tables.git"
+    }
+  },
+  {
+    "name": "prosemirror-transform",
+    "version": "1.12.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/prosemirror/prosemirror-transform.git"
+    }
+  },
+  {
+    "name": "prosemirror-view",
+    "version": "1.42.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/prosemirror/prosemirror-view.git"
+    }
+  },
+  {
+    "name": "react",
+    "version": "19.3.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/react/react.git",
+      "directory": "packages/react"
+    }
+  },
+  {
+    "name": "react-dom",
+    "version": "19.3.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/react/react.git",
+      "directory": "packages/react-dom"
+    }
+  },
+  {
+    "name": "readable-stream",
+    "version": "2.3.8",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/nodejs/readable-stream"
+    }
+  },
+  {
+    "name": "rope-sequence",
+    "version": "1.3.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/marijnh/rope-sequence.git"
+    }
+  },
+  {
+    "name": "safe-buffer",
+    "version": "5.1.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/feross/safe-buffer.git"
+    }
+  },
+  {
+    "name": "scheduler",
+    "version": "0.28.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/react/react.git",
+      "directory": "packages/scheduler"
+    }
+  },
+  {
+    "name": "setimmediate",
+    "version": "1.0.5",
+    "license": "MIT",
+    "repository": "YuzuJS/setImmediate"
+  },
+  {
+    "name": "string_decoder",
+    "version": "1.1.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/nodejs/string_decoder.git"
+    }
+  },
+  {
+    "name": "tslib",
+    "version": "2.8.1",
+    "license": "0BSD",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Microsoft/tslib.git"
+    }
+  },
+  {
+    "name": "use-sync-external-store",
+    "version": "1.7.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/react/react.git",
+      "directory": "packages/use-sync-external-store"
+    }
+  },
+  {
+    "name": "util-deprecate",
+    "version": "1.0.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/TooTallNate/util-deprecate.git"
+    }
+  },
+  {
+    "name": "w3c-keyname",
+    "version": "2.2.8",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/marijnh/w3c-keyname.git"
+    }
+  },
+  {
+    "name": "zod",
+    "version": "4.6.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/colinhacks/zod.git"
+    }
+  },
+  {
+    "name": "zustand",
+    "version": "4.5.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pmndrs/zustand.git"
+    }
+  },
+  {
+    "name": "zustand",
+    "version": "5.0.16",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pmndrs/zustand.git"
+    }
+  }
+]

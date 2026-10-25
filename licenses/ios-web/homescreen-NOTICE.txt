@@ -1,0 +1,17 @@
+Homescreen adapted code notice
+Source: https://github.com/lukejacksonn/homescreen
+Revision: 98a812f4f7c33594e791d65092f73b8f54b3c598
+Author: lukejacksonn and contributors
+Upstream README explicitly states: "## License" / "MIT".
+The inspected tree has no standalone LICENSE file. This adaptation relies on that explicit README declaration. No upstream images, fonts, icons, app data or bundled assets are included.
+Adapted files: components/Launcher.tsx; apps/home/components/AppDock.tsx.
+Local files: src/vendor/ios-web/Launcher.tsx.
+Changes: React types and device-relative geometry, Motion transforms, no Preact/Twind/popover dependency or document-level portal.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

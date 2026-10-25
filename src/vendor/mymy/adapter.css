@@ -1,0 +1,630 @@
+.mymy-ui {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  color: #111;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+}
+:where(.mymy-ui) button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: inherit;
+  min-width: 0;
+}
+.mymy-ui .kzkh,
+.mymy-ui .kzth,
+.mymy-ui .igh,
+.mymy-ui .kzxh {
+  padding-top: 10px;
+  min-height: 48px;
+}
+.mymy-ui .kzkr {
+  width: 100%;
+  display: flex;
+  padding: 9px 16px;
+  text-align: left;
+}
+.mymy-ui .kzkc2 > .kzkpl {
+  padding: 0 16px;
+  background: #f1f1f3;
+}
+.mymy-ui .kzkc2 > .kzkpl.on {
+  background: #111;
+  color: white;
+}
+.mymy-ui .kzkr .catalog-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 15px;
+  flex: none;
+}
+.mymy-ui .kzkn {
+  display: block;
+}
+.mymy-ui .kzkn small {
+  max-width: 260px;
+}
+.mymy-ui .kzknv {
+  padding-bottom: 16px;
+}
+.mymy-ui .kzknv button {
+  color: #a8a8ac;
+}
+.mymy-ui .kzknv button.on {
+  color: #111;
+}
+.mymy-ui.mymy-kakao:has(.msgs) {
+  background: #b2c7da;
+}
+.mymy-ui .msgs {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  scrollbar-width: none;
+}
+.mymy-ui .kzth {
+  background: #becfe0;
+}
+.mymy-ui .kzmav .catalog-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+}
+.mymy-ui .kzbub {
+  text-align: left;
+  white-space: pre-wrap;
+  flex: none;
+}
+.mymy-ui .kzm.kzot .kzbub {
+  background: white;
+}
+.mymy-ui .kzm.kzmy .kzbub {
+  background: #fee500;
+}
+.mymy-ui .kzinp {
+  margin-bottom: 12px;
+}
+.mymy-ui .kzinp .native-compose-field {
+  height: 32px;
+  min-height: 32px;
+  flex: 1;
+  border-radius: 0;
+  background: transparent;
+}
+.mymy-ui .mymy-local-menu {
+  position: absolute;
+  inset: auto 15px 30px;
+  background: #fff;
+  box-shadow: 0 5px 40px #0004;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 10;
+}
+.mymy-local-menu p {
+  margin: 20px 0;
+}
+.mymy-search {
+  margin: 8px 14px;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px;
+  background: #f1f1f3;
+  min-width: 0;
+  color: #111;
+}
+.mymy-empty {
+  text-align: center;
+  color: #888;
+  padding: 50px 20px;
+}
+.mymy-ui .ig {
+  min-height: 0;
+  width: 100%;
+}
+.mymy-ui .igb {
+  min-height: 0;
+  scrollbar-width: none;
+}
+.mymy-ui .igh .igl2 {
+  font-family: Georgia, serif;
+}
+.mymy-ui .igph {
+  display: flex;
+  align-items: center;
+}
+.mymy-ui .igph .catalog-avatar {
+  width: 34px;
+  height: 34px;
+  flex: none;
+}
+.mymy-ui .iga {
+  display: flex;
+  align-items: center;
+}
+.mymy-ui .iga button {
+  display: grid;
+  place-items: center;
+}
+.mymy-ui .iga .mymy-save {
+  margin-left: auto;
+}
+.mymy-ui .igc {
+  display: block;
+  text-align: left;
+  padding: 4px 14px;
+  line-height: 1.45;
+}
+.mymy-ui .cmall {
+  display: block;
+  padding: 6px 14px;
+  color: #888;
+}
+.mymy-ui .igt {
+  padding: 3px 14px 12px;
+}
+.mymy-ui .carw {
+  min-height: 240px;
+  background: #f2f2f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mymy-ui .carw .catalog-media {
+  width: 100%;
+  margin: 0;
+}
+.mymy-ui .carw img {
+  width: 100%;
+  max-height: 490px;
+  object-fit: cover;
+  display: block;
+}
+.mymy-ui .carw .media-placeholder {
+  min-height: 240px;
+}
+.mymy-ui .mymy-ig-nav {
+  height: 54px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 0.5px solid #ddd;
+}
+.mymy-ui .mymy-ig-nav button {
+  display: grid;
+  place-items: center;
+}
+.mymy-ui .mymy-ig-nav button[aria-pressed="true"] svg {
+  stroke-width: 3px;
+}
+.mymy-ui .sr .catalog-avatar {
+  width: 100%;
+  height: 100%;
+}
+.mymy-ui .pf {
+  display: flex;
+  align-items: center;
+  padding: 20px 14px;
+  gap: 22px;
+}
+.mymy-ui .pf > .catalog-avatar {
+  width: 76px;
+  height: 76px;
+}
+.mymy-ui .ps {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+.mymy-ui .ps b,
+.mymy-ui .ps small {
+  display: block;
+  text-align: center;
+}
+.mymy-ui .pn {
+  padding: 0 14px 16px;
+}
+.mymy-ui .pg2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.mymy-ui .pg2 button {
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #eee;
+}
+.mymy-ui .pg2 .catalog-media {
+  margin: 0;
+  max-height: 100%;
+}
+.mymy-ui .kzcs {
+  z-index: 30;
+}
+.mymy-ui .kzbk {
+  width: 100%;
+  height: 100%;
+  background: #0008;
+}
+.mymy-ui .kzsh {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.mymy-ui .kzsh > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 0.5px solid #ddd;
+}
+.mymy-sheet-handle {
+  width: 36px;
+  height: 4px;
+  border-radius: 3px;
+  background: #ccc;
+  margin: 8px auto;
+}
+.mymy-comments {
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+}
+.mymy-comments p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  overflow-wrap: anywhere;
+}
+.mymy-ui .cmb2 {
+  padding-bottom: 18px;
+}
+.mymy-ui .cmb2 button {
+  color: #3897f0;
+}
+.mymy-heart-pop {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 76px;
+  height: 76px;
+  margin: -38px;
+  animation: mymy-pop 0.75s forwards;
+  pointer-events: none;
+  color: white;
+  filter: drop-shadow(0 2px 8px #0006);
+}
+@keyframes mymy-pop {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  65% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.mymy-story {
+  position: absolute;
+  inset: 0;
+  background: #111;
+  color: white;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mymy-story > header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+.mymy-story > header button {
+  margin-left: auto;
+}
+.mymy-story > p {
+  padding: 16px;
+  text-align: center;
+}
+.mymy-story-bars {
+  display: flex;
+  gap: 3px;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  right: 5px;
+}
+.mymy-story-bars i {
+  height: 2px;
+  flex: 1;
+  background: #fff5;
+}
+.mymy-story-bars i.seen {
+  background: white;
+}
+.mymy-ui .kzxw {
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.mymy-ui .kzxh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.mymy-ui .kzxtb {
+  display: flex;
+  justify-content: space-around;
+  flex: none;
+}
+.mymy-ui .kzxtb button {
+  padding: 13px 30px;
+  color: #536471;
+  position: relative;
+}
+.mymy-ui .kzxtb button.on {
+  color: #0f1419;
+  font-weight: 700;
+}
+.mymy-ui .kzxtb button.on:after {
+  content: "";
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 0;
+  height: 4px;
+  background: #1d9bf0;
+  border-radius: 3px;
+}
+.mymy-ui .kzxfd {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding-bottom: 0;
+}
+.mymy-ui .kzxt > .catalog-avatar {
+  width: 38px;
+  height: 38px;
+  flex: none;
+}
+.mymy-ui .kzxt {
+  display: flex;
+  padding: 12px;
+  gap: 10px;
+}
+.mymy-ui .kzxb {
+  min-width: 0;
+  flex: 1;
+}
+.mymy-ui .kzxn {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mymy-ui .kzxx {
+  display: block;
+  text-align: left;
+  white-space: pre-wrap;
+  line-height: 1.45;
+  width: 100%;
+  padding: 5px 0;
+}
+.mymy-ui .kzxac button,
+.mymy-ui .kzxac span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  color: #536471;
+}
+.mymy-ui .kzxac button[aria-pressed="true"] {
+  color: #f91880;
+}
+.mymy-ui .kzxac button svg,
+.mymy-ui .kzxac span svg {
+  width: 17px;
+  height: 17px;
+}
+.mymy-ui .kzxnav {
+  position: static;
+  display: flex;
+  flex: none;
+  height: 54px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  border-top: 0.5px solid #ddd;
+}
+.mymy-ui .kzxnav button {
+  display: grid;
+  place-items: center;
+}
+.phone-shell.ios18:has(.mymy-ui) .status-bar {
+  background: #fff;
+  color: #111;
+}
+.phone-shell.ios18:has(.mymy-kakao .msgs) .status-bar {
+  background: #becfe0;
+}
+/* Mymy dock's final material rule, mapped to existing launcher; dimensions remain runtime-owned. */
+.phone-shell.ios18 .dock {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.4),
+    0 8px 24px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(18px) saturate(1.4);
+}
+
+.mymy-ui .sts .st {
+  display: block;
+  width: 72px;
+  flex: 0 0 72px;
+  text-align: center;
+}
+.mymy-ui .sts .sr {
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
+.mymy-ui .sts .st small {
+  display: block;
+}
+.mymy-ui .carw .catalog-art {
+  width: 100%;
+  height: 270px;
+  border-radius: 0;
+  display: grid;
+  place-items: center;
+  background: #f1f1f4;
+}
+.mymy-ui .carw .catalog-art:before,
+.mymy-ui .carw .catalog-art:after {
+  display: none;
+}
+.mymy-ui .carw .catalog-art span {
+  position: static;
+}
+.mymy-ui .kzxtb button {
+  display: block;
+}
+.mymy-ui .kzxnav button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+/* The original header includes its own 52px status area; Runtime already owns that area. */
+.mymy-ui .kzxh {
+  margin-top: 0;
+}
+.mymy-ui.mymy-x.x-reference-dark,
+.mymy-ui.mymy-x.x-reference-dark .kzxw {
+  background: #000;
+  color: #e7e9ea;
+}
+.mymy-ui.mymy-x .kzxtb {
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+.mymy-ui.mymy-x .kzxtb button {
+  padding: 12px 14px;
+  flex: none;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxtb button {
+  color: #71767b;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxtb button.on {
+  color: #e7e9ea;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxtb button.on:after {
+  background: #e7e9ea;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxt,
+.mymy-ui.mymy-x.x-reference-dark .kzxtb,
+.mymy-ui.mymy-x.x-reference-dark .kzxnav {
+  border-color: #2f3336;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxn small,
+.mymy-ui.mymy-x.x-reference-dark .kzxac button,
+.mymy-ui.mymy-x.x-reference-dark .kzxac span {
+  color: #71767b;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxn {
+  font-size: 15px;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxn b {
+  color: #e7e9ea;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxx {
+  font-size: 16px;
+  line-height: 1.45;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxnav {
+  height: 67px;
+}
+.mymy-ui.mymy-x.x-reference-dark .kzxnav button {
+  color: #e7e9ea;
+}
+.phone-shell.ios18:has(.x-reference-dark) .status-bar {
+  background: #000;
+  color: white;
+}
+.x-post-detail.x-reference-dark {
+  background: #000;
+  color: #e7e9ea;
+}
+.x-post-detail.x-reference-dark .post-detail-nav,
+.x-post-detail.x-reference-dark .post-detail-reply {
+  background: #000;
+  color: #e7e9ea;
+  border-color: #2f3336;
+}
+.x-post-detail.x-reference-dark .post-detail-body {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.x-post-detail.x-reference-dark .post-detail-actions,
+.x-post-detail.x-reference-dark .post-detail-tabs,
+.x-post-detail.x-reference-dark .post-detail-comments > article {
+  border-color: #2f3336;
+  color: #71767b;
+}
+.x-post-detail.x-reference-dark .post-detail-reply input {
+  border: 0;
+  border-radius: 24px;
+  background: #202327;
+  color: #e7e9ea;
+  padding: 13px;
+}
+.x-post-detail.x-reference-dark .post-options-menu {
+  background: #202327;
+  color: #e7e9ea;
+}
+.x-detail-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #000;
+  height: 56px;
+  min-height: 56px;
+}
+.x-detail-bottom button {
+  background: none;
+  border: 0;
+  color: #e7e9ea;
+  display: grid;
+  place-items: center;
+}
+.x-detail-bottom svg {
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,955 @@
+/* iOS 18 classic reference coordinate space: 390 × 844 CSS points. */
+.phone-shell.ios18 {
+  --phone-scale: 0.84;
+  width: calc(390px * var(--phone-scale) + 16px);
+  height: calc(844px * var(--phone-scale) + 16px);
+  padding: 8px;
+  border-radius: 48px;
+  background: linear-gradient(
+    105deg,
+    #bfc0c2,
+    #242526 5%,
+    #111 12%,
+    #303133 90%,
+    #a3a4a6
+  );
+  box-shadow:
+    0 0 0 1px #6b6d70,
+    0 0 0 2px #c0c1c3,
+    0 22px 46px #0002;
+}
+.ios18 .phone-screen {
+  width: 390px;
+  height: 844px;
+  zoom: var(--phone-scale);
+  border: 0;
+  border-radius: 47px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
+    "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.ios18 .status-bar {
+  height: 59px;
+  padding: 0 28px 0 34px;
+  background: transparent;
+  align-items: center;
+}
+.ios18 .status-bar > button {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+.ios18 .dynamic-island {
+  top: 11px;
+  width: 126px;
+  height: 37px;
+  border-radius: 23px;
+  background: #000;
+  box-shadow: none;
+}
+.ios18 .dynamic-island:after {
+  top: 13px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+}
+.ios18 .signals {
+  gap: 6px;
+}
+.ios18 .signals svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 2.4;
+}
+.ios18 .ios-battery {
+  position: relative;
+  width: 26px;
+  height: 13px;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  font-size: 9px;
+  line-height: 11px;
+  display: block;
+}
+.ios18 .ios-battery:after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: 4px;
+  width: 2px;
+  height: 5px;
+  background: currentColor;
+  border-radius: 0 2px 2px 0;
+  opacity: 0.6;
+}
+.ios18 .ios-battery > span {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 2px;
+  background: currentColor;
+  opacity: 0.9;
+}
+.ios18 .ios-battery > b {
+  position: absolute;
+  inset: 0;
+  font-size: 9px;
+  text-align: center;
+  line-height: 11px;
+  color: #333;
+  mix-blend-mode: screen;
+}
+.ios18 .home-screen {
+  padding: 76px 0 31px;
+  gap: 0;
+}
+.ios18 .home-pages {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  min-height: 0;
+  flex: 1;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+}
+.ios18 .home-pages::-webkit-scrollbar {
+  display: none;
+}
+.ios18 .home-app-grid {
+  flex: 0 0 100%;
+  width: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0 23px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(6, 88px);
+  grid-auto-rows: 88px;
+  row-gap: 0;
+  column-gap: 0;
+  overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  align-content: start;
+}
+.ios18 .home-app-grid > button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.ios18 .app-icon-wrap {
+  gap: 6px;
+}
+.ios18 .app-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  position: relative;
+  isolation: isolate;
+  box-shadow:
+    inset 0 1px 1px #fffc,
+    inset 0 -1px 1px #0003,
+    0 2px 6px #0002;
+}
+.ios18 .app-icon:after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 0 0 0.7px #ffffff5c,
+    inset 0 1px 2px #fff8,
+    inset 0 -1px 2px #0002;
+  background: linear-gradient(
+    145deg,
+    #fff2,
+    transparent 38%,
+    transparent 70%,
+    #fff1
+  );
+}
+.ios18 .app-artwork {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ios18 .app-name {
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 80px;
+  line-height: 16px;
+  text-shadow: 0 1px 4px #0008;
+}
+.ios18 .folder-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  backdrop-filter: blur(18px) saturate(1.5);
+  background: #ffffff30;
+  border: 1px solid #fff5;
+  padding: 6px;
+}
+.ios18 .folder-icon .app-icon-wrap {
+  gap: 0;
+}
+.ios18 .folder-icon .app-icon-wrap.small .app-icon {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+}
+.ios18 .app-icon-wrap.small .app-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+}
+.ios18 .home-search {
+  flex: none;
+  min-height: 28px;
+  padding: 5px 12px;
+  margin: 4px auto 15px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #ffffff26;
+  backdrop-filter: blur(16px);
+  box-shadow:
+    inset 0 1px 1px #fff5,
+    0 1px 4px #0001;
+}
+.ios18 .home-page-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 20px;
+  flex: none;
+}
+.ios18 .home-page-dots button {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  padding: 0;
+  background: #ffffff60;
+  border-radius: 50%;
+}
+.ios18 .home-page-dots button[aria-current] {
+  background: #fff;
+}
+.ios18 .dock {
+  height: 94px;
+  min-height: 94px;
+  margin: 0 12px;
+  padding: 16px 12px;
+  border-radius: 35px;
+  gap: 18px;
+  flex: none;
+  background: #ffffff29;
+  backdrop-filter: blur(28px) saturate(1.7);
+  border: 1px solid #fff5;
+  box-shadow:
+    inset 1px 1px 2px #fffa,
+    inset -1px -1px 2px #0001,
+    0 4px 14px #0001;
+}
+.ios18 .dock .app-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+.ios18 .home-indicator {
+  bottom: 8px;
+  width: 135px;
+  height: 5px;
+  border-radius: 4px;
+}
+.ios18 .lock-screen {
+  padding-top: 95px;
+}
+.ios18 .lock-screen > p {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.ios18 .lock-screen > h1 {
+  font-size: 108px;
+  line-height: 1.1;
+  letter-spacing: -6px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: #f4faffd9;
+  text-shadow:
+    0 1px 1px #fff9,
+    0 -1px 1px #53656944;
+}
+.ios18 .lock-screen > .lock-owner {
+  display: none;
+}
+.ios18 .lock-notice {
+  margin-top: 46px;
+  background: #ffffff48;
+  border: 1px solid #fff6;
+  backdrop-filter: blur(26px) saturate(1.6);
+  border-radius: 25px;
+  box-shadow:
+    inset 0 1px 2px #fffa,
+    0 4px 16px #0001;
+  color: #151515;
+  padding: 15px;
+}
+.ios18 .lock-tools {
+  bottom: 48px;
+  left: 38px;
+  right: 38px;
+}
+.ios18 .lock-tools button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffffff29;
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 1px 2px #fff7;
+}
+.ios18 .unlock-btn {
+  font-size: 13px;
+  bottom: 18px;
+}
+.ios18 .app-screen {
+  padding-top: 59px;
+  padding-bottom: 34px;
+}
+.ios18 .app-screen:has(.independent-skin) {
+  padding-top: 59px;
+  padding-bottom: 34px;
+}
+/* System navigation floats above content; third-party layouts are kept separate. */
+.ios18 .catalog-skin[class*="native-"] .catalog-tabs {
+  margin: 7px 12px 0;
+  border-radius: 30px;
+  background: #f8f8f8b8;
+  backdrop-filter: blur(24px) saturate(1.6);
+  border: 1px solid #fff9;
+  box-shadow:
+    inset 0 1px 1px #fff,
+    0 2px 12px #0002;
+  min-height: 60px;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-tabs button {
+  border-radius: 23px;
+  margin: 4px;
+  padding: 5px 12px;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-tabs button.selected {
+  background: #bfc1c333;
+}
+.ios18 .wechat-ui .wx-nav {
+  min-height: 44px;
+}
+.ios18 .wechat-ui .wx-nav strong {
+  font-size: 17px;
+}
+.ios18 .wechat-ui .wx-search {
+  margin: 7px 8px 9px;
+  border-radius: 9px;
+  height: 35px;
+}
+.ios18 .wechat-ui .wx-search input {
+  font-size: 16px;
+}
+.ios18 .wechat-ui .wx-chat-row {
+  min-height: 73px;
+  padding: 11px 16px;
+  gap: 12px;
+  border: 0;
+  position: relative;
+}
+.ios18 .wechat-ui .wx-chat-row:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  height: 0.5px;
+  background: #d9d9d9;
+}
+.ios18 .wechat-ui .wx-chat-row .skin-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+}
+.ios18 .wechat-ui .wx-chat-row strong {
+  font-size: 17px;
+  font-weight: 400;
+}
+.ios18 .wechat-ui .wx-chat-row p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.ios18 .wechat-ui .wx-chat-row time {
+  font-size: 11px;
+}
+.ios18 .wechat-ui .wx-bottom {
+  min-height: 53px;
+}
+.ios18 .wechat-ui .wx-bottom button span {
+  font-size: 10px;
+}
+.ios18 .wechat-ui .skin-message {
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.ios18 .wechat-ui .skin-message > .skin-avatar {
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+}
+.ios18 .wechat-ui .skin-bubble {
+  font-size: 17px;
+  line-height: 1.4;
+  padding: 10px 12px;
+  max-width: 250px;
+  border-radius: 5px;
+  min-height: 40px;
+}
+.ios18 .wechat-ui .skin-bubble:before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 15px;
+  width: 9px;
+  height: 9px;
+  transform: rotate(45deg);
+  background: inherit;
+  border-radius: 1px;
+}
+.ios18 .wechat-ui .outgoing .skin-bubble:before {
+  left: auto;
+  right: -5px;
+}
+.ios18 .wechat-ui .wx-message-time {
+  display: none;
+}
+.ios18 .wechat-ui .skin-date {
+  font-size: 12px;
+  margin-bottom: 22px;
+  color: #9b9b9b;
+}
+.ios18 .wechat-ui .skin-compose {
+  padding: 8px 10px;
+  gap: 12px;
+  min-height: 55px;
+  background: #f6f6f6;
+  border-top: 0.5px solid #d4d4d4;
+}
+.ios18 .wechat-ui .skin-compose > button {
+  height: 40px;
+  min-height: 40px;
+  border: 0;
+  border-radius: 5px;
+}
+.ios18 .wechat-ui .skin-compose > svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.5;
+}
+@media (min-height: 950px) and (min-width: 1300px) {
+  .phone-shell.ios18 {
+    --phone-scale: 0.86;
+  }
+}
+@media (max-width: 760px) {
+  .phone-shell.ios18 {
+    --phone-scale: 0.76;
+  }
+}
+@media (max-width: 420px) {
+  .phone-shell.ios18 {
+    --phone-scale: 0.7;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ios18 .home-pages {
+    scroll-behavior: auto;
+  }
+}
+.ios18
+  :is(
+    .native-phone,
+    .native-contacts,
+    .native-notes,
+    .native-clock,
+    .native-messages,
+    .spotify-ui,
+    .netease-ui,
+    .native-camera
+  )
+  .catalog-nav[data-authoring="false"][data-root="true"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  min-height: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-scroll > h1 {
+  font-size: 34px;
+  margin: 12px 20px 16px;
+  letter-spacing: -0.8px;
+}
+.ios18 .native-messages .message-heading {
+  padding: 12px 20px;
+}
+.ios18 .native-messages .message-heading h1 {
+  font-size: 34px;
+  letter-spacing: -0.8px;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-search {
+  margin: 8px 16px 15px;
+  border-radius: 25px;
+  min-height: 42px;
+  background: #ebebed;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-search input {
+  font-size: 17px;
+  padding: 10px 8px;
+}
+.ios18 .native-messages .catalog-chat {
+  min-height: 82px;
+  padding: 12px 20px;
+  gap: 12px;
+}
+.ios18 .native-messages .catalog-chat .catalog-avatar {
+  width: 48px;
+  height: 48px;
+}
+.ios18 .native-messages .catalog-chat strong {
+  font-size: 17px;
+}
+.ios18 .native-messages .catalog-chat p {
+  font-size: 15px;
+  line-height: 1.3;
+  margin-top: 4px;
+}
+.ios18 .native-messages .sms-bubbles .catalog-message > button {
+  font-size: 17px;
+  line-height: 1.35;
+  padding: 11px 14px;
+  border-radius: 20px;
+}
+.ios18 .native-messages .catalog-composer {
+  border: 0;
+  margin: 8px 12px;
+  padding: 8px 10px;
+  border-radius: 30px;
+  background: #f0f0f2c9;
+  backdrop-filter: blur(20px);
+  box-shadow:
+    inset 0 1px 1px #fff,
+    0 1px 5px #0001;
+}
+.ios18 .native-messages .catalog-composer > button {
+  min-height: 38px;
+  background: transparent;
+  border: 0;
+}
+.ios18 .native-safari .safari-address {
+  margin: 8px 16px;
+  border-radius: 28px;
+  height: 50px;
+  backdrop-filter: blur(24px);
+  background: #f4f4f4a8;
+  border: 1px solid #fff9;
+  box-shadow:
+    inset 0 1px 1px #fff,
+    0 2px 10px #0002;
+}
+.ios18 .native-safari .safari-address input {
+  font-size: 16px;
+}
+/* Text metrics use the same device-point scale as the shell. */
+.ios18 .ios-battery > b {
+  color: white;
+  mix-blend-mode: difference;
+}
+.ios18 .lock-notice strong {
+  font-size: 14px;
+}
+.ios18 .lock-notice p {
+  font-size: 14px;
+  line-height: 1.35;
+}
+.ios18 .lock-notice > small {
+  font-size: 11px;
+}
+.ios18 .skin-bubble {
+  font-size: 17px;
+  line-height: 1.4;
+  max-width: 278px;
+  padding: 10px 12px;
+}
+.ios18 .skin-bubble > small {
+  font-size: 11px;
+}
+.ios18 .skin-date {
+  font-size: 12px;
+}
+.ios18 .skin-compose {
+  min-height: 55px;
+  padding: 8px 12px;
+}
+.ios18 .skin-compose > button {
+  font-size: 16px;
+  min-height: 38px;
+}
+.ios18 .skin-compose > svg {
+  width: 25px;
+  height: 25px;
+}
+.ios18 .wa-large-title {
+  font-size: 34px;
+  letter-spacing: -0.8px;
+}
+.ios18 .wa-search input {
+  font-size: 17px;
+}
+.ios18 .wa-filters > button {
+  font-size: 14px;
+  padding: 7px 13px;
+}
+.ios18 .wa-chat-row {
+  gap: 12px;
+  min-height: 82px;
+  padding: 12px 16px;
+}
+.ios18 .wa-chat-row strong {
+  font-size: 17px;
+}
+.ios18 .wa-chat-row p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+.ios18 .wa-chat-row time {
+  font-size: 12px;
+}
+.ios18 .wa-chat-row .skin-avatar {
+  width: 52px;
+  height: 52px;
+}
+.ios18 .wa-thread-profile {
+  min-height: 52px;
+}
+.ios18 .wa-thread-profile strong {
+  font-size: 17px;
+}
+.ios18 .wa-thread-profile small {
+  font-size: 12px;
+}
+.ios18 .wa-thread-profile .skin-avatar {
+  width: 36px;
+  height: 36px;
+  font-size: 17px;
+}
+.ios18 .wa-bottom button span {
+  font-size: 10px;
+}
+.ios18 .ig-post-author strong {
+  font-size: 14px;
+}
+.ios18 .ig-post-caption {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.ios18 .ig-post-caption p {
+  font-size: 14px;
+}
+.ios18 .ig-post-caption time {
+  font-size: 11px;
+}
+.ios18 .ig-post-controls svg {
+  width: 25px;
+  height: 25px;
+}
+.ios18 .catalog-nav strong {
+  font-size: 17px;
+}
+.ios18 .catalog-nav {
+  min-height: 44px;
+}
+.ios18 .catalog-chat {
+  min-height: 78px;
+  padding: 12px 16px;
+}
+.ios18 .catalog-chat strong {
+  font-size: 17px;
+}
+.ios18 .catalog-chat p {
+  font-size: 14px;
+}
+.ios18 .catalog-chat time {
+  font-size: 11px;
+}
+.ios18 .catalog-message > button {
+  font-size: 17px;
+  line-height: 1.4;
+}
+.ios18 .catalog-message > button small {
+  font-size: 11px;
+}
+.ios18 .catalog-composer > button {
+  font-size: 16px;
+}
+.ios18 .catalog-row {
+  min-height: 58px;
+}
+.ios18 .catalog-row strong {
+  font-size: 17px;
+}
+.ios18 .catalog-row p {
+  font-size: 14px;
+}
+.ios18 .catalog-row small {
+  font-size: 12px;
+}
+.ios18 .catalog-tabs {
+  min-height: 60px;
+}
+.ios18 .catalog-tabs button {
+  font-size: 10px;
+}
+.ios18 .catalog-tabs svg {
+  width: 24px;
+  height: 24px;
+}
+.ios18 .social-body {
+  font-size: 16px;
+  line-height: 1.45;
+}
+.ios18 .calendar-grid button {
+  font-size: 17px;
+  height: 42px;
+}
+.ios18 .calendar-grid > small {
+  font-size: 12px;
+}
+.ios18 .calendar-event strong {
+  font-size: 16px;
+}
+.ios18 .native-section {
+  font-size: 13px;
+}
+.ios18 .lock-notice > div {
+  flex: 1;
+  min-width: 0;
+}
+.ios18 .lock-notice > small {
+  white-space: nowrap;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 3px;
+}
+/* Classic iOS18 materials supersede the experimental glass calibration. */
+.ios18 .app-icon {
+  border-radius: 14px;
+  box-shadow: 0 1px 3px #0002;
+}
+.ios18 .app-icon:after {
+  display: none;
+}
+.ios18 .dock .app-icon {
+  border-radius: 14px;
+}
+.ios18 .dock {
+  border-radius: 30px;
+  background: #ffffff38;
+  backdrop-filter: blur(24px) saturate(1.35);
+  box-shadow: none;
+  border: 0;
+}
+.ios18 .home-search {
+  background: #ffffff28;
+  box-shadow: none;
+}
+.ios18 .folder-icon {
+  background: #ffffff35;
+  backdrop-filter: blur(18px);
+  box-shadow: none;
+  border: 0;
+}
+.ios18 .lock-screen > h1 {
+  font-size: 96px;
+  font-weight: 500;
+  letter-spacing: -4px;
+  color: #fff;
+  text-shadow: none;
+}
+.ios18 .lock-screen > p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.ios18 .lock-tools button {
+  background: #24242466;
+  backdrop-filter: blur(10px);
+  box-shadow: none;
+}
+.ios18 .lock-notice {
+  background: #f6f6f6a6;
+  backdrop-filter: blur(20px);
+  border: 0;
+  border-radius: 22px;
+  box-shadow: none;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-tabs {
+  margin: 0;
+  border-radius: 0;
+  min-height: 49px;
+  background: #fafafaf0;
+  backdrop-filter: blur(16px);
+  box-shadow: none;
+  border: 0;
+  border-top: 0.5px solid #c8c8cc;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-tabs button {
+  border-radius: 0;
+  margin: 0;
+  padding: 5px 8px;
+  background: transparent;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-tabs button.selected {
+  background: transparent;
+}
+.ios18 .catalog-skin[class*="native-"] .catalog-search {
+  border-radius: 10px;
+  background: #ebebed;
+}
+.ios18 .native-safari .safari-address {
+  border-radius: 12px;
+  background: #e9e9ec;
+  box-shadow: none;
+  border: 0;
+  backdrop-filter: none;
+}
+.ios18 .native-messages .catalog-composer {
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: #f7f7f9;
+  border-top: 0.5px solid #d1d1d6;
+  backdrop-filter: none;
+}
+.ios18 .native-messages .catalog-composer > button {
+  border: 1px solid #d1d1d6;
+  border-radius: 20px;
+  background: white;
+}
+.dark-phone.ios18 .catalog-skin[class*="native-"] .catalog-tabs {
+  background: #1c1c1ef0;
+  border-color: #3a3a3c;
+}
+.dark-phone.ios18 .catalog-skin[class*="native-"] .catalog-search {
+  background: #2c2c2e;
+}
+.dark-phone.ios18 .native-messages .catalog-composer {
+  background: #1c1c1e;
+  border-color: #38383a;
+}
+.dark-phone.ios18 .native-messages .catalog-composer > button {
+  background: #2c2c2e;
+  border-color: #48484a;
+}
+.ios18
+  .wechat-ui[data-thread="false"][data-moments="false"][data-utility="false"]
+  .wx-nav
+  > button:first-child {
+  visibility: hidden;
+}
+.skin-avatar img,
+.catalog-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.skin-avatar,
+.catalog-avatar {
+  overflow: hidden;
+}
+.avatar-preview {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.ios18 .wechat-ui[data-utility="true"] .wx-nav > button:first-child {
+  visibility: visible;
+}
+.ios18 .wechat-ui {
+  position: relative;
+}
+.ios18 .wx-chat-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+.ios18 .wx-unread {
+  position: absolute;
+  right: -6px;
+  top: -5px;
+  background: #fa5151;
+  color: white;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+}
+.ios18 .wx-popup-menu {
+  position: absolute;
+  right: 8px;
+  top: 43px;
+  background: #4b4b4b;
+  color: white;
+  z-index: 10;
+  width: 154px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px #0002;
+}
+.ios18 .wx-popup-menu:before {
+  content: "";
+  position: absolute;
+  right: 13px;
+  top: -6px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(45deg);
+  background: #4b4b4b;
+}
+.ios18 .wx-popup-menu button {
+  display: block;
+  position: relative;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  border-bottom: 0.5px solid #ffffff1c;
+}
+.ios18 .wx-members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 12px;
+  padding: 20px 16px;
+  background: white;
+}
+.ios18 .wx-members > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+}
+

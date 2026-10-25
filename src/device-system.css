@@ -1,0 +1,1326 @@
+/* Device runtime: safe areas, system layers and gestures are independent of Studio. */
+.phone-shell.ios18 {
+  border-radius: calc(48px * var(--phone-scale) + 7px);
+  padding: 7px;
+  width: calc(393px * var(--phone-scale) + 14px);
+  height: calc(852px * var(--phone-scale) + 14px);
+  background: #17181b;
+  box-shadow:
+    0 0 0 1px #65666a,
+    0 0 0 3px #242529,
+    0 24px 60px #0003;
+}
+.ios18 .phone-screen {
+  width: 393px;
+  height: 852px;
+  isolation: isolate;
+  border-radius: 45px;
+  letter-spacing: -0.25px;
+  touch-action: pan-y;
+}
+.ios18 .status-bar {
+  z-index: 80;
+  height: 59px;
+  padding: 0 28px 4px 31px;
+  pointer-events: none;
+  color: #fff;
+  background: transparent;
+}
+.ios18 .status-bar button {
+  pointer-events: auto;
+  font-size: 17px;
+  font-weight: 600;
+}
+.ios18 .dynamic-island {
+  top: 11px;
+  width: 124px;
+  height: 36px;
+  border-radius: 22px;
+  box-shadow: none;
+}
+.ios18 .signals {
+  gap: 5px;
+}
+.ios18 .signals > svg {
+  width: 18px;
+  height: 14px;
+  stroke-width: 2.3;
+}
+.ios18 .in-app .status-bar {
+  color: #111;
+  background: transparent;
+}
+.ios18
+  .in-app:has(
+    .discord-ui,
+    .native-camera,
+    .native-clock,
+    .spotify-ui,
+    .netflix-ui,
+    .vertical-video
+  )
+  .status-bar {
+  color: white;
+}
+.ios18 .home-screen {
+  padding-top: 72px;
+  padding-bottom: 14px;
+}
+.ios18 .home-app-grid {
+  padding: 0 20px;
+  grid-template-rows: repeat(6, 90px);
+  grid-auto-rows: 90px;
+}
+.ios18 .home-app-grid > button {
+  width: 100%;
+  touch-action: pan-x;
+  transition:
+    filter 0.16s,
+    transform 0.16s;
+}
+.ios18 .home-app-grid > button:active,
+.ios18 .dock button:active {
+  transform: scale(0.91);
+  filter: brightness(0.8);
+}
+.ios18 .app-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px #0002;
+}
+.ios18 .app-name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.ios18 .dock {
+  height: 94px;
+  min-height: 94px;
+  margin: 0 12px;
+  border-radius: 32px;
+  justify-content: space-around;
+  padding: 0 8px;
+  gap: 0;
+  background: #eeeeee40;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: blur(28px) saturate(1.5);
+}
+.ios18 .dock .app-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+}
+.ios18 .home-search {
+  margin: 0 auto 17px;
+  font-size: 13px;
+  padding: 6px 12px;
+}
+.ios18 .home-page-dots {
+  height: 20px;
+}
+.ios18 .home-indicator {
+  z-index: 85;
+  bottom: 0;
+  left: 0;
+  transform: none;
+  width: 100%;
+  height: 34px;
+  background: transparent;
+  border-radius: 0;
+  touch-action: none;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 8px;
+}
+.ios18 .home-indicator:after {
+  content: "";
+  display: block;
+  width: 139px;
+  height: 5px;
+  border-radius: 4px;
+  background: white;
+  transition: transform 0.2s;
+}
+.ios18 .in-app .home-indicator:after {
+  background: #111;
+}
+.ios18
+  .in-app:has(
+    .discord-ui,
+    .native-camera,
+    .native-clock,
+    .spotify-ui,
+    .netflix-ui
+  )
+  .home-indicator:after {
+  background: white;
+}
+.ios18 .home-indicator:active:after {
+  transform: scaleX(1.1);
+}
+.ios18 .device-lock {
+  padding: 0;
+  position: absolute;
+  inset: 0;
+  display: block;
+  color: white;
+  touch-action: none;
+}
+.ios18 .lock-clock-block {
+  position: absolute;
+  top: 78px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.ios18 .lock-clock-block > svg {
+  margin: 0 auto 9px;
+  opacity: 0.85;
+}
+.ios18 .lock-clock-block > p {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0;
+}
+.ios18 .lock-clock-block > h1 {
+  font-size: 100px;
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -4px;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.ios18 .lock-notifications {
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  bottom: 132px;
+}
+.ios18 .lock-notice {
+  margin: 0;
+  padding: 12px 14px;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  align-items: start;
+  gap: 10px;
+  border: 0;
+  border-radius: 22px;
+  background: #f0f0f58c;
+  backdrop-filter: blur(30px) saturate(1.6);
+  box-shadow: none;
+  color: #111;
+}
+.ios18 .lock-notice > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.ios18 .lock-notice strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+.ios18 .lock-notice p {
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 2px 0 0;
+}
+.ios18 .lock-notice small {
+  font-size: 13px;
+  white-space: nowrap;
+  color: #555;
+}
+.ios18 .notice-glyph {
+  width: 38px;
+  height: 38px;
+  background: #34c759;
+  border-radius: 9px;
+  color: white;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.ios18 .swipe-unlock {
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  animation: unlock-hint 3s ease-in-out infinite;
+}
+@keyframes unlock-hint {
+  50% {
+    opacity: 0.45;
+    translate: 0 -3px;
+  }
+}
+.ios18 .lock-tools {
+  bottom: 46px;
+  left: 46px;
+  right: 46px;
+}
+.ios18 .lock-tools button {
+  width: 50px;
+  height: 50px;
+  background: #0005;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: blur(20px);
+}
+.ios18 .pin-open {
+  background: #17171dbb;
+  backdrop-filter: blur(28px);
+}
+.ios18 .device-passcode {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 106px;
+}
+.ios18 .device-passcode > svg {
+  margin-bottom: 22px;
+}
+.ios18 .device-passcode h2 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0;
+}
+.ios18 .passcode-dots {
+  display: flex;
+  gap: 23px;
+  justify-content: center;
+  max-width: 340px;
+  flex-wrap: wrap;
+  margin: 25px 0 43px;
+}
+.ios18 .passcode-dots i {
+  width: 13px;
+  height: 13px;
+  border: 1.4px solid white;
+  border-radius: 50%;
+}
+.ios18 .passcode-dots i.filled {
+  background: white;
+}
+.ios18 .device-passcode .pin-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 78px);
+  gap: 15px 25px;
+  margin: 0;
+  padding: 0;
+}
+.ios18 .device-passcode .pin-keypad button {
+  width: 78px;
+  height: 78px;
+  padding: 0;
+  border-radius: 50%;
+  color: white;
+  background: #ffffff2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+}
+.ios18 .pin-keypad button:active {
+  background: #ffffff75;
+}
+.ios18 .pin-keypad b {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+.ios18 .pin-keypad small {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  min-height: 12px;
+  margin-top: 2px;
+}
+.ios18 .pin-footer {
+  position: absolute;
+  left: 46px;
+  right: 46px;
+  bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.ios18 .pin-footer button {
+  font-size: 16px;
+  color: white;
+}
+.ios18 .pin-error {
+  font-size: 13px;
+  margin-top: 16px;
+  color: white;
+}
+.ios18 .accessible-pin {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  opacity: 0;
+}
+.pin-shake {
+  animation: pin-shake 0.4s;
+}
+@keyframes pin-shake {
+  25% {
+    transform: translateX(-12px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-6px);
+  }
+}
+.ios18 .folder-overlay {
+  z-index: 70;
+  padding: 145px 30px 80px;
+  background: #3334;
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.ios18 .folder-overlay > h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 36px;
+  color: white;
+}
+.ios18 .folder-apps {
+  width: 100%;
+  padding: 24px 12px;
+  border-radius: 30px;
+  background: #ffffff26;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 0;
+  max-height: 450px;
+  overflow: auto;
+}
+.ios18 .folder-apps button {
+  padding: 0;
+  min-width: 0;
+}
+.ios18 .folder-overlay .glass-btn {
+  margin-top: 30px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: white;
+}
+.ios18 .system-panel {
+  z-index: 75;
+  inset: 0;
+  border-radius: 0;
+  padding: 100px 20px 48px;
+  background: #20222ca6;
+  backdrop-filter: blur(35px) saturate(1.6);
+  color: white;
+}
+.ios18 .system-panel .panel-close {
+  position: absolute;
+  top: 63px;
+  right: 20px;
+  color: white;
+  font-size: 16px;
+}
+.ios18 .system-panel h2 {
+  font-size: 32px;
+  margin: 15px 0 20px;
+}
+.ios18 .system-notice {
+  background: #f0f0f599;
+  color: #111;
+  border: 0;
+  border-radius: 20px;
+  padding: 13px;
+  margin-bottom: 9px;
+  gap: 10px;
+}
+.ios18 .system-notice p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+.ios18 .system-panel.device-control {
+  padding: 80px 25px 40px;
+  background: #1518239c;
+}
+.ios18 .cc-status {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 4px 20px;
+  font-size: 14px;
+}
+.ios18 .cc-status span {
+  opacity: 0.6;
+}
+.ios18 .cc-close {
+  position: absolute;
+  top: 55px;
+  right: 26px;
+  opacity: 0.7;
+}
+.ios18 .cc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 70px;
+  gap: 14px;
+}
+.ios18 .cc-connect,
+.ios18 .cc-music {
+  grid-column: span 2;
+  grid-row: span 2;
+  border-radius: 25px;
+  background: #292c38bf;
+  padding: 14px;
+}
+.ios18 .cc-connect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.ios18 .cc-connect button {
+  border-radius: 50%;
+  background: #ffffff26;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+}
+.ios18 .cc-connect button svg {
+  width: 27px;
+  height: 27px;
+}
+.ios18 .cc-connect .blue {
+  background: #007aff;
+}
+.ios18 .cc-connect .green {
+  background: #34c759;
+}
+.ios18 .cc-connect .orange {
+  background: #ff9500;
+}
+.ios18 .cc-music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  text-align: center;
+}
+.ios18 .cc-music small {
+  font-size: 17px;
+  font-weight: 600;
+}
+.ios18 .cc-music > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ios18 .cc-music button svg {
+  width: 20px;
+}
+.ios18 .cc-square,
+.ios18 .cc-focus {
+  border-radius: 20px;
+  background: #292c38bf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.ios18 .cc-square svg {
+  width: 26px;
+  height: 26px;
+}
+.ios18 .cc-white {
+  background: #f5f5f6;
+  color: #5856d6;
+}
+.ios18 .cc-slider {
+  position: relative;
+  grid-row: span 2;
+  background: #292c38bf;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0;
+}
+.ios18 .cc-slider input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  writing-mode: vertical-lr;
+  direction: rtl;
+  opacity: 0;
+  z-index: 2;
+  cursor: ns-resize;
+}
+.ios18 .cc-slider > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+.ios18 .cc-slider > svg {
+  position: relative;
+  color: #383944;
+  margin-bottom: 22px;
+  z-index: 1;
+}
+.ios18 .cc-focus {
+  grid-column: span 2;
+  gap: 10px;
+  font-size: 15px;
+}
+.ios18 .cc-dismiss {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+.ios18 .cc-tool {
+  position: absolute;
+  inset: 220px 28px auto;
+  background: #373942ee;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 50px #0005;
+}
+.ios18 .cc-tool p {
+  font-size: 15px;
+  margin: 20px 0;
+}
+.ios18 .cc-tool button {
+  color: #8cc8ff;
+}
+.ios18 .device-switcher {
+  position: absolute;
+  inset: 0;
+  z-index: 72;
+  backdrop-filter: blur(30px);
+  background: #2225;
+  padding: 90px 20px 40px;
+  color: white;
+}
+.ios18 .device-switcher h2 {
+  font-size: 23px;
+  font-weight: 500;
+}
+.ios18 .device-switcher > div {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 25px 10px;
+}
+.ios18 .device-switcher > div > button {
+  flex: 0 0 210px;
+  height: 360px;
+  background: #f2f2f7ed;
+  border-radius: 28px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 15px 40px #0003;
+}
+.ios18 .device-switcher strong {
+  font-size: 22px;
+}
+.ios18 .device-switcher span {
+  font-size: 14px;
+  color: #777;
+}
+.ios18 .home-context-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 74;
+  background: #0003;
+  backdrop-filter: blur(12px);
+  display: grid;
+  place-items: center;
+}
+.ios18 .home-context-menu {
+  width: 260px;
+  border-radius: 18px;
+  background: #f0f0f5e8;
+  color: #111;
+  padding: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 15px 50px #0004;
+}
+.ios18 .home-context-menu > button {
+  width: 100%;
+  padding: 13px 16px;
+  border-top: 0.5px solid #aaa5;
+  text-align: left;
+  font-size: 16px;
+}
+.ios18 .screen-dimmer {
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  background: #000;
+  opacity: var(--screen-dim, 0);
+  pointer-events: none;
+}
+.ios18 .native-compose-field {
+  flex: 1;
+  min-width: 0;
+  min-height: 34px;
+  border-radius: 5px;
+  background: white;
+  font-size: 16px;
+  text-align: left;
+  padding: 5px 9px;
+}
+.ios18 .device-keyboard {
+  position: absolute;
+  z-index: 82;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 3px 22px;
+  background: #d1d3d9;
+  color: #111;
+  box-shadow: 0 -1px 0 #aaa;
+  animation: keyboard-enter 0.25s ease-out;
+}
+@keyframes keyboard-enter {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.ios18 .keyboard-open .app-screen {
+  padding-bottom: 370px;
+}
+.ios18 .keyboard-draft {
+  display: flex;
+  background: #f7f7f8;
+  margin: 0 -3px;
+  min-height: 46px;
+  padding: 6px 10px;
+  gap: 10px;
+  align-items: center;
+}
+.ios18 .keyboard-draft input {
+  background: white;
+  flex: 1;
+  min-width: 0;
+  font-size: 17px;
+  border: 1px solid #ddd;
+  border-radius: 17px;
+  padding: 5px 12px;
+}
+.ios18 .keyboard-candidates {
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ios18 .keyboard-candidates button {
+  font-size: 17px;
+  flex: 1;
+  border-right: 0.5px solid #aaa;
+}
+.ios18 .keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 0 11px;
+}
+.ios18 .keyboard-row button {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 #85868a;
+  height: 42px;
+  min-width: 28px;
+  flex: 1;
+  max-width: 33px;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+.ios18 .keyboard-row:nth-of-type(4) {
+  padding: 0 17px;
+}
+.ios18 .keyboard-row .key-special {
+  background: #acb0bb;
+  max-width: none;
+  flex: 1.25;
+  font-size: 16px;
+}
+.ios18 .keyboard-bottom button {
+  max-width: none;
+  flex: 1.2;
+  background: #acb0bb;
+  font-size: 16px;
+}
+.ios18 .keyboard-bottom .key-space {
+  flex: 5;
+  background: white;
+}
+.ios18 .keyboard-accessories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 22px 12px;
+}
+.ios18 .keyboard-accessories small {
+  font-size: 12px;
+  color: #666;
+}
+.ios18 .native-settings {
+  flex: 1;
+  min-height: 0;
+  background: #f2f2f7;
+  display: flex;
+  flex-direction: column;
+  color: #111;
+}
+.ios18 .skin-settings > .app-nav {
+  display: none;
+}
+.ios18 .settings-native-nav {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  color: #007aff;
+  font-size: 17px;
+}
+.ios18 .settings-native-nav button {
+  display: flex;
+  align-items: center;
+}
+.ios18 .settings-native-nav strong {
+  color: #111;
+}
+.ios18 .settings-native-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 16px 28px;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+.ios18 .settings-native-scroll h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 4px 0 10px;
+  letter-spacing: 0.2px;
+}
+.ios18 .settings-search {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 9px;
+  border-radius: 10px;
+  background: #e3e3e9;
+  color: #8e8e93;
+  margin: 0 0 16px;
+}
+.ios18 .settings-search input {
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 17px;
+  color: #111;
+}
+.ios18 .settings-account {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: white;
+  border-radius: 11px;
+  padding: 14px 15px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.ios18 .settings-account > span {
+  background: #999da8;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 29px;
+  color: white;
+}
+.ios18 .settings-account > div {
+  flex: 1;
+}
+.ios18 .settings-account strong {
+  font-size: 21px;
+  font-weight: 400;
+}
+.ios18 .settings-account small {
+  display: block;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.ios18 .settings-group {
+  background: white;
+  border-radius: 11px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+.ios18 .settings-group:empty {
+  display: none;
+}
+.ios18 .settings-native-row {
+  width: 100%;
+  min-height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px 14px;
+  gap: 12px;
+  text-align: left;
+  font-size: 17px;
+}
+.ios18 .settings-native-row + .settings-native-row:before {
+  content: "";
+  position: absolute;
+  left: 56px;
+  right: 0;
+  top: 0;
+  height: 0.5px;
+  background: #c6c6c8;
+}
+.ios18 .settings-glyph {
+  width: 29px;
+  height: 29px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  color: white;
+  flex-shrink: 0;
+}
+.ios18 .settings-native-row > small {
+  margin-left: auto;
+  font-size: 16px;
+  color: #8e8e93;
+}
+.ios18 .settings-native-row > svg,
+.ios18 .settings-account > svg {
+  color: #c4c4c7;
+}
+.ios18 .settings-info-row {
+  padding: 13px 16px;
+  font-size: 17px;
+  border-bottom: 0.5px solid #ddd;
+}
+.ios18 .ios-switch {
+  width: 51px;
+  height: 31px;
+  border-radius: 16px;
+  background: #e9e9eb;
+  margin-left: auto;
+  position: relative;
+  flex-shrink: 0;
+}
+.ios18 .ios-switch:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 27px;
+  height: 27px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px #0002;
+  transition: transform 0.2s;
+}
+.ios18 .ios-switch.on {
+  background: #34c759;
+}
+.ios18 .ios-switch.on:after {
+  transform: translateX(20px);
+}
+.ios18 .native-settings .record-row {
+  background: white;
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ios18 * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+.ios18 .cc-small-connections {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+}
+.ios18 .cc-small-connections button {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+.ios18 .cc-small-connections button svg {
+  width: 14px;
+  height: 14px;
+}
+.ios18 .cc-connect {
+  gap: 11px;
+  padding: 12px;
+}
+.ios18 .cc-square {
+  border-radius: 50%;
+}
+.ios18 .cc-slider {
+  border-radius: 30px;
+}
+.ios18 .system-panel.device-control {
+  padding: 113px 33px 40px;
+}
+.ios18 .cc-status {
+  margin: 0 2px 20px;
+}
+.ios18 .cc-grid {
+  grid-auto-rows: 66px;
+  gap: 14px;
+}
+.ios18 .cc-connect,
+.ios18 .cc-music {
+  border-radius: 27px;
+}
+.ios18 .swipe-unlock {
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transform: none;
+}
+.ios18 .lock-tools {
+  position: absolute;
+  width: auto;
+  margin: 0;
+}
+@keyframes unlock-hint {
+  50% {
+    opacity: 0.45;
+  }
+}
+.ios18 .status-bar {
+  touch-action: none;
+}
+.ios18 .lock-tools {
+  pointer-events: none;
+}
+.ios18 .lock-tools button {
+  pointer-events: auto;
+}
+.ios18 .legacy-passcode {
+  margin: 20px 0 0;
+  padding: 10px 14px;
+  background: #ffffff30;
+  border: 1px solid #ffffff50;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+}
+.ios18 .device-notices {
+  width: 100%;
+  position: relative;
+}
+.ios18 .notice-cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 430px;
+  overflow: auto;
+  scrollbar-width: none;
+  padding: 1px 0 16px;
+}
+.ios18 .device-notice {
+  position: relative;
+  flex: none;
+  border-radius: 21px;
+  background: #eeeef18f;
+  backdrop-filter: blur(28px) saturate(1.65);
+  color: #111;
+  text-align: left;
+}
+.ios18 .notice-open {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  text-align: left;
+  padding: 12px 14px;
+  min-height: 70px;
+}
+.ios18 .notice-app-art {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  overflow: hidden;
+  flex: none;
+}
+.ios18 .notice-app-art svg {
+  width: 100%;
+  height: 100%;
+}
+.ios18 .notice-copy {
+  flex: 1;
+  min-width: 0;
+}
+.ios18 .notice-copy strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+}
+.ios18 .notice-copy > span {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 19px;
+  margin-top: 1px;
+}
+.ios18 .notice-open time {
+  font-size: 12px;
+  white-space: nowrap;
+  color: #555;
+}
+.ios18 .notice-remove {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #0002;
+}
+.ios18 .notice-stacked .notice-cards {
+  overflow: visible;
+}
+.ios18 .notice-stacked .device-notice:before,
+.ios18 .notice-stacked .device-notice:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  top: 7px;
+  bottom: -7px;
+  border-radius: inherit;
+  background: #d3d3d888;
+  z-index: -1;
+}
+.ios18 .notice-stacked .device-notice:after {
+  left: 14px;
+  right: 14px;
+  top: 14px;
+  bottom: -14px;
+  opacity: 0.5;
+  z-index: -2;
+}
+.ios18 .notice-expand {
+  font-size: 13px;
+  color: white;
+  background: #0003;
+  border-radius: 20px;
+  display: block;
+  padding: 5px 13px;
+  margin: 5px auto 0;
+}
+.ios18 .device-banner {
+  position: absolute;
+  z-index: 83;
+  top: 58px;
+  left: 8px;
+  right: 8px;
+  background: #f3f3f6e8;
+  backdrop-filter: blur(25px);
+  border-radius: 21px;
+  display: flex;
+  padding: 12px;
+  gap: 10px;
+  color: #111;
+  text-align: left;
+  box-shadow: 0 6px 20px #0002;
+  animation: banner-enter 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ios18 .device-banner > span:last-child {
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+  line-height: 19px;
+}
+.ios18 .device-banner strong {
+  display: block;
+  font-size: 15px;
+}
+.ios18 .device-banner > span > span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@keyframes banner-enter {
+  from {
+    transform: translateY(-130%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.ios18 .device-passcode .pin-keypad {
+  width: 284px;
+}
+.ios18 .phone-screen:has(.device-control) .status-bar {
+  color: white;
+}
+.ios18 .phone-screen:has(.device-control) .home-indicator:after {
+  background: white;
+}
+.ios18 .device-switcher {
+  background: #2225;
+  backdrop-filter: blur(25px);
+  padding: 110px 0 40px;
+  overflow: hidden;
+}
+.ios18 .device-switcher > .switcher-cards {
+  padding: 22px 40px 30px;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.ios18 .device-switcher .recent-app-card {
+  flex: 0 0 244px;
+  height: 562px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  gap: 12px;
+  padding: 0;
+  scroll-snap-align: center;
+  text-align: left;
+}
+.ios18 .recent-app-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  padding-left: 6px;
+  min-height: 30px;
+}
+.ios18 .device-switcher .recent-app-label strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+.ios18 .recent-app-label .app-icon-wrap.small .app-icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 7px;
+}
+.ios18 .recent-app-window {
+  display: block;
+  position: relative;
+  width: 244px;
+  height: 528.98px;
+  border-radius: 30px;
+  background: #f2f2f7;
+  overflow: hidden;
+  box-shadow: 0 15px 40px #0003;
+  color: #111;
+}
+.ios18 .recent-app-snapshot {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 393px;
+  height: 852px;
+  transform: scale(0.620865);
+  transform-origin: 0 0;
+  pointer-events: none;
+  background: white;
+}
+.ios18 .recent-app-snapshot > .app-screen {
+  position: absolute;
+  inset: 0;
+  width: 393px;
+  height: 852px;
+  opacity: 1;
+  transform: none;
+}
+.ios18 .switcher-done {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 20px;
+  color: white;
+  font-size: 16px;
+}
+.ios18 .skin-settings[data-authoring="true"] > .app-nav {
+  display: flex;
+}
+/* Calibrated against Apple's iPhone 15 Pro iOS 18 home screenshot:
+   normalized first icon row ~80pt, row pitch ~99pt, four columns ~90pt. */
+.ios18 .home-screen {
+  padding-top: 80px;
+}
+.ios18 .home-app-grid {
+  padding-left: 16px;
+  padding-right: 16px;
+  grid-template-rows: repeat(6, 99px);
+  grid-auto-rows: 99px;
+}

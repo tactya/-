@@ -1,0 +1,530 @@
+/* Interactive home coordinates share the existing 393×852 Phone Runtime. */
+.ios18 .home-screen.interactive-home {
+  position: absolute;
+  inset: 0;
+  padding: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+}
+.ios18 .interactive-home .launcher-toolbar {
+  position: absolute;
+  z-index: 12;
+  top: 59px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  pointer-events: none;
+}
+.ios18 .launcher-toolbar button {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  border-radius: 18px;
+  background: #f4f4f5bb;
+  backdrop-filter: blur(18px);
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #111;
+}
+.ios18 .launcher-toolbar span {
+  font-size: 10px;
+  color: #666;
+}
+.ios18 .interactive-home .home-pages {
+  padding: 0;
+  position: absolute;
+  top: 92px;
+  bottom: 164px;
+  left: 0;
+  right: 0;
+  height: auto;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  touch-action: none;
+  scrollbar-width: none;
+}
+.ios18 .interactive-home .home-app-grid {
+  display: grid;
+  flex: 0 0 393px;
+  width: 393px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 99px);
+  grid-auto-rows: 99px;
+  gap: 0;
+  padding: 0 16px;
+  margin: 0;
+  align-content: start;
+  scroll-snap-align: start;
+  height: 594px;
+  min-height: 594px;
+  box-sizing: border-box;
+}
+.ios18 .launcher-slot {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.ios18 .launcher-cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  touch-action: none;
+  color: inherit;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.ios18 .launcher-cell .app-icon-wrap {
+  gap: 5px;
+  pointer-events: none;
+}
+.ios18 .launcher-cell .app-name {
+  text-align: center;
+  max-width: 82px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ios18 .launcher-widget {
+  padding: 0 7px 13px;
+  height: 100%;
+}
+.ios18 .widget-face {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  background: #fff;
+  border-radius: 23px;
+  box-shadow: 0 2px 4px #0001;
+  color: #111;
+  overflow: hidden;
+  text-align: left;
+  pointer-events: none;
+}
+.ios18 .widget-face small {
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ios18 .widget-face b {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.ios18 .widget-face .widget-day {
+  font-size: 47px;
+}
+.ios18 .widget-red {
+  font-size: 13px;
+  color: #ff3b30;
+}
+.ios18 .widget-weather {
+  background: linear-gradient(#4577b3, #7fa7d9);
+  color: #fff;
+}
+.ios18 .widget-notes {
+  background: #fff9df;
+}
+.ios18 .widget-notes strong {
+  font-size: 19px;
+}
+.ios18 .widget-battery svg {
+  color: #34c759;
+}
+.ios18 .widget-clock {
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.ios18 .interactive-home [data-drop-zone="dock"] {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+}
+.ios18 .interactive-home .dock {
+  height: 94px;
+  padding: 16px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.ios18 .interactive-home .dock .launcher-cell {
+  width: 75px;
+  height: 62px;
+  flex: none;
+}
+.ios18 .interactive-home .dock .app-name {
+  display: none;
+}
+.ios18 .launcher-bottom-tools {
+  position: absolute;
+  bottom: 115px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.ios18 .launcher-bottom-tools .home-search {
+  margin: 0;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+.ios18 .launcher-bottom-tools .home-page-dots {
+  height: 14px;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+}
+.ios18 .home-editing .launcher-cell > .app-icon-wrap {
+  animation: home-jiggle 0.22s ease-in-out infinite alternate;
+}
+@keyframes home-jiggle {
+  from {
+    transform: rotate(-1.5deg);
+  }
+  to {
+    transform: rotate(1.5deg);
+  }
+}
+.ios18 .launcher-remove {
+  position: absolute;
+  top: -4px;
+  left: 8px;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  background: #dedee2e6;
+  color: #111;
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+}
+.ios18 .launcher-ghost {
+  position: absolute;
+  transform: translate(-50%, -35%);
+  z-index: 150;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 10px #0005);
+  opacity: 0.9;
+}
+.ios18 .launcher-sheet {
+  position: absolute;
+  inset: 59px 0 0;
+  z-index: 83;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f7;
+  color: #111;
+  backdrop-filter: blur(30px);
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+}
+.ios18 .launcher-sheet > header {
+  height: 51px;
+  min-height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 0.5px solid #d8d8dd;
+  background: #fafafae8;
+}
+.ios18 .launcher-sheet > header > button {
+  position: absolute;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  color: #007aff;
+  background: none;
+  font-size: 16px;
+  padding: 0;
+}
+.ios18 .launcher-sheet > header strong {
+  font-size: 17px;
+  font-weight: 600;
+}
+.ios18 .launcher-sheet-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 16px 16px 55px;
+  scrollbar-width: none;
+}
+.ios18 .launcher-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  background: #e3e3e8;
+  border-radius: 10px;
+  padding: 0 9px;
+  height: 37px;
+}
+.ios18 .launcher-search input {
+  background: none;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  min-width: 0;
+  flex: 1;
+  height: 35px;
+  font-size: 17px;
+  color: #111;
+}
+.ios18 .library-filters,
+.ios18 .widget-types {
+  display: flex;
+  gap: 5px;
+  margin: 14px 0;
+  flex-wrap: wrap;
+}
+.ios18 .library-filters button,
+.ios18 .widget-types button {
+  border: 0;
+  border-radius: 14px;
+  background: #e3e3e8;
+  color: #333;
+  padding: 6px 11px;
+  font-size: 13px;
+}
+.ios18 .library-filters button[aria-pressed="true"],
+.ios18 .widget-types button[aria-pressed="true"] {
+  background: #007aff;
+  color: #fff;
+}
+.ios18 .library-count {
+  font-size: 12px;
+  color: #888;
+  margin: 0 4px 12px;
+}
+.ios18 .runtime-library-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: white;
+  min-height: 72px;
+  padding: 10px 12px;
+  border-bottom: 0.5px solid #e5e5ea;
+}
+.ios18 .runtime-library-row .app-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 11px;
+}
+.ios18 .runtime-library-row .app-icon-wrap {
+  flex: none;
+}
+.ios18 .library-app-title {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  color: #111;
+}
+.ios18 .library-app-title strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+.ios18 .library-app-title small {
+  font-size: 11px;
+  color: #999;
+}
+.ios18 .library-get {
+  flex: none;
+  border: 0;
+  border-radius: 16px;
+  background: #f0f0f5;
+  color: #007aff;
+  padding: 6px 11px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.ios18 .widget-preview {
+  width: 180px;
+  height: 180px;
+  margin: 30px auto;
+}
+.ios18 .widget-preview .widget-face {
+  pointer-events: auto;
+}
+.ios18 .launcher-primary {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border-radius: 13px;
+  border: 0;
+  background: #007aff;
+  color: #fff;
+  font-size: 17px;
+  margin: 20px 0;
+}
+.ios18 .launcher-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #007aff;
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid #ddd;
+  padding: 16px;
+  font-size: 17px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.ios18 .launcher-action input[type="file"] {
+  font-size: 12px;
+  max-width: 140px;
+}
+.ios18 .launcher-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #777;
+  font-size: 13px;
+  margin: 15px 0;
+}
+.ios18 .launcher-field input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 17px;
+  color: #111;
+}
+.ios18 .launcher-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+.ios18 .launcher-checkbox input {
+  width: 20px;
+  height: 20px;
+}
+.ios18 .launcher-toast {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 125px;
+  z-index: 160;
+  background: #333e;
+  color: white;
+  border: 0;
+  border-radius: 15px;
+  padding: 14px;
+  font-size: 14px;
+}
+.ios18 .launcher-sheet .danger {
+  color: #ff3b30;
+}
+.ios18 .launcher-sheet .launcher-primary.danger {
+  background: #ff3b30;
+  color: white;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ios18 .home-editing .launcher-cell > .app-icon-wrap {
+    animation: none;
+  }
+}
+.ios18 .widget-preview-medium {
+  width: 320px;
+  height: 170px;
+}
+.ios18 .widget-preview-large {
+  width: 320px;
+  height: 290px;
+}
+.ios18 .launcher-sheet.storefront {
+  inset: 59px 0 0;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: none;
+  z-index: 30;
+}
+.ios18 .storefront > header {
+  height: 44px;
+  border: 0;
+}
+.ios18 .storefront > header > strong {
+  display: none;
+}
+.ios18 .storefront-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 4px 12px;
+}
+.ios18 .storefront-title h1 {
+  font-size: 34px;
+  line-height: 1.1;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.ios18 .storefront-title span {
+  font-size: 12px;
+  color: #888;
+}
+.ios18 .storefront .runtime-library-row {
+  border-bottom: 0.5px solid #e5e5ea;
+}
+.ios18 .storefront .runtime-library-row > button:last-child {
+  color: #007aff;
+  background: #f2f2f7;
+  border-radius: 18px;
+  padding: 6px 16px;
+}
+.phone-shell.ios18:has(.storefront) .status-bar {
+  color: #111;
+  background: white;
+}
+.ios18 .interactive-home:not(.home-editing) .home-pages {
+  top: 82px;
+}
+.app-artwork {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+.ios18 .launcher-sheet button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

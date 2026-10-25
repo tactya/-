@@ -1,0 +1,9 @@
+Mymy UI code attribution
+Source: https://github.com/dudwo5/Mymy/blob/main/index.html
+Copyright remains with dudwo5 / original author. No upstream LICENSE was present during review.
+Permission basis: user reported obtaining original author permission for this reuse on 2026-10-25.
+Selected UI CSS and template/interaction adaptations are NOT automatically relicensed under MIT.
+Retain this notice with distributed source and builds. Any uses outside the author's grant require separate permission.
+Excluded: original stories, names, accounts, chats, images, wallpaper, audio, video, embedded data URLs, network services and analytics.
+Adaptations: React components, scoped CSS, existing Item/Runtime bindings, safe media, event callbacks, existing local saves and lifecycle cleanup.
+Reviewed upstream commit: 2fc3a98cfd83bbf5b513ae8ac2851710830adfab

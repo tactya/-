@@ -1,0 +1,266 @@
+.ios18 .qq-native-thread {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f0eff4;
+  color: #111;
+  font-size: 17px;
+}
+.ios18 .qq-thread-nav {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 13px;
+  border-bottom: 0.5px solid #ddd;
+  background: #f8f7faee;
+  gap: 10px;
+}
+.ios18 .qq-thread-nav > div {
+  flex: 1;
+  min-width: 0;
+}
+.ios18 .qq-thread-nav strong {
+  font-size: 17px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.ios18 .qq-thread-nav small {
+  font-size: 11px;
+  color: #777;
+  display: block;
+  margin-top: 3px;
+}
+.ios18 .qq-thread-nav > button {
+  border: 0;
+  background: none;
+  color: #111;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+.ios18 .qq-thread-messages {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 14px 10px 20px;
+  scrollbar-width: none;
+}
+.ios18 .qq-message-time {
+  display: block;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+  margin: 14px 0 20px;
+}
+.ios18 .qq-native-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 24px;
+}
+.ios18 .qq-native-message.outgoing {
+  flex-direction: row-reverse;
+}
+.ios18 .qq-native-message > .catalog-avatar {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: 50%;
+}
+.ios18 .qq-message-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 280px;
+}
+.ios18 .qq-native-message.outgoing .qq-message-stack {
+  align-items: flex-end;
+}
+.ios18 .qq-message-stack > small {
+  font-size: 9px;
+  color: #888;
+}
+.ios18 .qq-native-bubble {
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 13px;
+  background: white;
+  color: #111;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: left;
+  max-width: 270px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.ios18 .qq-native-message.outgoing .qq-native-bubble {
+  background: #00a6fb;
+  color: #fff;
+}
+.ios18 .qq-message-quote {
+  display: flex;
+  flex-direction: column;
+  background: #e8e8e8;
+  color: #111;
+  padding: 9px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  gap: 3px;
+  font-size: 13px;
+}
+.ios18 .qq-message-quote b {
+  font-weight: 600;
+}
+.ios18 .qq-transfer-bubble,
+.ios18 .qq-native-message.outgoing .qq-transfer-bubble {
+  width: 205px;
+  max-width: 245px;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  border-radius: 14px;
+  overflow: hidden;
+  white-space: normal;
+}
+.ios18 .qq-transfer-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+.ios18 .qq-transfer-top > span {
+  width: 46px;
+  height: 46px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f1f1f4;
+  color: #00a6fb;
+}
+.ios18 .qq-transfer-top strong {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ios18 .qq-transfer-top p {
+  margin: 2px 0 0;
+  font-size: 14px;
+}
+.ios18 .qq-transfer-bubble footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+  padding: 9px 0;
+  border-top: 0.5px solid #eee;
+  font-size: 12px;
+}
+.ios18 .qq-transfer-bubble footer small {
+  font-size: 10px;
+  color: #999;
+}
+.ios18 .qq-native-composer {
+  padding: 7px 8px 9px;
+  background: #f1f0f5;
+  border-top: 0.5px solid #e2e1e6;
+}
+.ios18 .qq-native-composer > .native-compose-field {
+  width: 100%;
+  height: 37px;
+  min-height: 37px;
+  border-radius: 13px;
+  background: #fff;
+  padding: 6px 10px;
+  color: #888;
+  border: 0;
+}
+.ios18 .qq-native-composer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 12px;
+}
+.ios18 .qq-native-composer > div > button {
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 0;
+  color: #555;
+  padding: 0;
+}
+.ios18 .qq-thread-empty {
+  text-align: center;
+  color: #999;
+  margin-top: 80px;
+}
+.ios18 .qq-thread-sheet {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: #f2f2f7;
+  display: flex;
+  flex-direction: column;
+}
+.ios18 .qq-thread-sheet > header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 48px;
+  background: #fafafa;
+  border-bottom: 0.5px solid #ddd;
+}
+.ios18 .qq-thread-sheet > header > button {
+  position: absolute;
+  left: 7px;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 0;
+  color: #007aff;
+  padding: 0;
+  font-size: 16px;
+}
+.ios18 .qq-member-list {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.ios18 .qq-member-list > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+}
+.ios18 .qq-media-picker {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: auto;
+}
+.ios18 .qq-media-picker > button {
+  width: 90px;
+  border: 0;
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+}
+.ios18 .qq-media-picker > p {
+  color: #999;
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.ios18 .qq-native-bubble { display:block; flex:none; }
+.ios18 .qq-transfer-top > div { min-width:0; flex:1; }
+.ios18 .qq-transfer-top strong { white-space:nowrap; }
+.phone-shell.ios18:has(.qq-native-thread) .status-bar { background:#f8f7fa; color:#111; }

@@ -1,0 +1,888 @@
+/* Calculator, Health and Weather reference screens are separate component trees. */
+.ios18 .skin-calculator {
+  background: #000;
+  color: white;
+}
+.ios18 .skin-calculator > .app-nav {
+  display: none;
+}
+.ios18 .native-calculator {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  background: #000;
+  color: white;
+  position: relative;
+}
+.ios18 .native-calculator .calc-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 16px;
+}
+.ios18 .calc-toolbar button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(#292929, #191919);
+  border: 1px solid #ffffff1a;
+  color: #fff;
+  padding: 0;
+}
+.ios18 .native-calculator > output {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 21px 10px;
+  box-sizing: border-box;
+  text-align: right;
+  font-weight: 300;
+  line-height: 1.1;
+  overflow: hidden;
+}
+.ios18 .native-calculator .calc-keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 0 16px 26px;
+  flex: none;
+  box-sizing: border-box;
+}
+.ios18 .calc-keypad > button {
+  border: 0;
+  border-radius: 50%;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background: linear-gradient(135deg, #303030, #353535);
+  box-shadow: inset 0 1px 1px #ffffff20;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+}
+.ios18 .calc-keypad > .calc-function {
+  background: #5b5b5b;
+}
+.ios18 .calc-keypad > .calc-operator {
+  background: #ff9500;
+  font-size: 49px;
+  font-weight: 300;
+}
+.ios18 .calc-keypad > .calc-selected {
+  background: white;
+  color: #ff9500;
+}
+.ios18 .calc-keypad > button:active {
+  filter: brightness(1.5);
+}
+.ios18 .native-calculator .calc-history {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: #101010;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.ios18 .calc-history > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  min-height: 44px;
+}
+.ios18 .calc-history header button {
+  display: flex;
+  align-items: center;
+  border: 0;
+  background: none;
+  color: #ff9500;
+  font-size: 16px;
+  padding: 0;
+}
+.ios18 .calc-history-list {
+  padding: 16px;
+  overflow: auto;
+}
+.ios18 .calc-history-list > button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid #333;
+  color: #fff;
+  padding: 17px 8px;
+  background: none;
+  text-align: right;
+  font-size: 22px;
+}
+.ios18 .calc-history-list > p {
+  color: #888;
+  text-align: center;
+  margin-top: 100px;
+}
+.ios18 .calc-mode-option {
+  background: #333;
+  color: #ff9500;
+  margin: 15px;
+  padding: 20px;
+  border: 0;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.ios18 .calibrated-health {
+  background: #f2f1f7;
+  display: flex;
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  color: #000;
+}
+.ios18 .health-native-nav {
+  height: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #f9f9fbe8;
+  position: relative;
+}
+.ios18 .health-native-nav > strong {
+  position: absolute;
+  left: 65px;
+  right: 65px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  pointer-events: none;
+}
+.ios18 .health-native-nav > button {
+  border: 0;
+  background: none;
+  color: #007aff;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+.ios18 .health-native-nav > button:last-child {
+  margin-left: auto;
+  border-radius: 50%;
+  background: #e4e5ec;
+  width: 41px;
+  height: 41px;
+  color: #8b94b1;
+}
+.ios18 .health-native-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 16px 100px;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+}
+.ios18 .health-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 48px;
+}
+.ios18 .health-section-title h2 {
+  font-size: 23px;
+  margin: 0;
+}
+.ios18 .health-section-title button {
+  color: #007aff;
+  background: none;
+  border: 0;
+  font-size: 17px;
+  padding: 0;
+}
+.ios18 .health-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ios18 .health-native-card {
+  position: relative;
+  height: 130px;
+  min-height: 130px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 26px;
+  background: #fff;
+  padding: 16px;
+  text-align: left;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none;
+}
+.ios18 .health-native-card > header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  position: static;
+  min-height: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+}
+.ios18 .health-native-card header strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+.ios18 .health-native-card header time {
+  font-size: 13px;
+  color: #999;
+  margin-left: auto;
+}
+.ios18 .health-native-card header > svg:last-child {
+  color: #c7c7cc;
+}
+.ios18 .health-card-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.ios18 .health-card-bottom b {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.ios18 .health-card-bottom span {
+  font-size: 16px;
+  color: #999;
+  margin-left: 4px;
+}
+.ios18 .health-activity-values {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  position: relative;
+  padding-right: 75px;
+}
+.ios18 .health-activity-values > div:not(:last-child) {
+  flex: 1;
+}
+.ios18 .health-activity-values small {
+  font-size: 12px;
+  font-weight: 600;
+}
+.ios18 .health-activity-values p {
+  margin: 2px 0 0;
+  white-space: nowrap;
+  color: #111;
+}
+.ios18 .health-activity-values b {
+  font-size: 19px;
+}
+.ios18 .health-activity-values span {
+  font-size: 11px;
+  color: #999;
+}
+.ios18 .activity-rings {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  background: #000;
+  border-radius: 50%;
+}
+.ios18 .activity-rings i {
+  position: absolute;
+  border: 6px solid #4e0b1c;
+  border-radius: 50%;
+  inset: 3px;
+}
+.ios18 .activity-rings i:nth-child(2) {
+  inset: 13px;
+  border-color: #194500;
+}
+.ios18 .activity-rings i:nth-child(3) {
+  inset: 23px;
+  border-color: #00606b;
+  border-width: 5px;
+}
+.ios18 .health-spark {
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+.ios18 .health-spark i {
+  width: 8px;
+  background: #e6e6ec;
+  border-radius: 3px 3px 0 0;
+}
+.ios18 .health-all-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border: 0;
+  border-radius: 25px;
+  width: 100%;
+  padding: 17px;
+  margin: 20px 0;
+  color: #111;
+  font-size: 18px;
+  text-align: left;
+}
+.ios18 .health-all-row > svg:last-child {
+  margin-left: auto;
+  color: #ccc;
+}
+.ios18 .health-trends-title {
+  font-size: 23px;
+  margin: 30px 16px 14px;
+}
+.ios18 .health-trends-empty {
+  border-radius: 25px;
+  background: #fff;
+  padding: 30px;
+  color: #999;
+}
+.ios18 .health-floating-tabs {
+  display: flex;
+  position: absolute;
+  bottom: -15px;
+  left: 47px;
+  right: 47px;
+  height: 60px;
+  border: 1px solid #d4d4d8;
+  background: #f9f9f9ce;
+  box-shadow: inset 0 1px 3px #fff;
+  backdrop-filter: blur(24px);
+  border-radius: 35px;
+  padding: 4px;
+  z-index: 5;
+}
+.ios18 .health-floating-tabs > button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: none;
+  border: 0;
+  border-radius: 30px;
+  color: #111;
+  font-size: 11px;
+  padding: 0;
+}
+.ios18 .health-floating-tabs > .selected {
+  background: #dedee6;
+  color: #0087fa;
+}
+.ios18 .health-floating-tabs > .selected svg {
+  fill: currentColor;
+}
+.ios18 .health-pin-editor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 18px;
+  margin-bottom: 12px;
+}
+.ios18 .health-pin-editor label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.ios18 .health-browse-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  background: #fff;
+  border: 0;
+  border-bottom: 0.5px solid #ddd;
+  padding: 17px;
+  color: #111;
+  font-size: 18px;
+}
+.ios18 .health-browse-row > svg:last-child {
+  margin-left: auto;
+  color: #ccc;
+}
+.ios18 .health-periods {
+  display: flex;
+  border-radius: 8px;
+  background: #e3e3e8;
+  margin: 20px 0;
+  padding: 2px;
+}
+.ios18 .health-periods button {
+  flex: 1;
+  border: 0;
+  background: none;
+  border-radius: 6px;
+  padding: 6px 0;
+  font-size: 13px;
+  color: #111;
+}
+.ios18 .health-periods button[data-selected="true"] {
+  background: #fff;
+}
+.ios18 .health-detail-value {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 20px 8px;
+}
+.ios18 .health-detail-value small {
+  font-size: 15px;
+  color: #999;
+}
+.ios18 .health-detail-chart {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 15px 10px;
+}
+.ios18 .health-detail-chart > span {
+  flex: 1;
+  background: #ff9500;
+  border-radius: 4px;
+}
+.ios18 .health-detail-description,
+.ios18 .health-profile-empty,
+.ios18 .health-sharing {
+  margin: 25px 0;
+  background: #fff;
+  padding: 25px;
+  border-radius: 25px;
+}
+.ios18 .health-profile-empty,
+.ios18 .health-sharing {
+  text-align: center;
+}
+.ios18 .health-profile-empty > svg,
+.ios18 .health-sharing > svg {
+  color: #007aff;
+  margin: 10px auto;
+}
+.ios18 .skin-weather {
+  background: #151c34;
+}
+.ios18 .calibrated-weather {
+  background: linear-gradient(#080c24, #303f60);
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+.ios18 .weather-stars {
+  position: absolute;
+  inset: -60px 0 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(1px 1px at 8% 6%, #fff9 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 13%, #fff9 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 10%, #fff9 0%, transparent 100%),
+    radial-gradient(2px 2px at 60% 25%, #fffa 0%, transparent 100%),
+    radial-gradient(1px 1px at 20% 50%, #fffa 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 35%, #fffa 0%, transparent 100%),
+    radial-gradient(1px 1px at 45% 75%, #fffa 0%, transparent 100%);
+  background-size: 130px 190px;
+  opacity: 0.8;
+}
+.ios18 .weather-native-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 20px 110px;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+}
+.ios18 .weather-native-current {
+  height: 320px;
+  box-sizing: border-box;
+  padding: 48px 0 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ios18 .weather-native-current > small {
+  font-size: 14px;
+  font-weight: 500;
+}
+.ios18 .weather-native-current > h1 {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 3px 0 0;
+  line-height: 43px;
+}
+.ios18 .weather-native-current > output {
+  font-size: 100px;
+  font-weight: 200;
+  line-height: 105px;
+  letter-spacing: -5px;
+}
+.ios18 .weather-high-low {
+  display: flex;
+  gap: 10px;
+  font-size: 26px;
+  letter-spacing: -0.5px;
+}
+.ios18 .weather-native-current > p {
+  font-size: 20px;
+  margin: 4px 0;
+}
+.ios18 .weather-moon-art {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  opacity: 0.4;
+}
+.ios18 .weather-native-card {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 18px;
+  background: #707b9b22;
+  backdrop-filter: blur(12px);
+  padding: 16px;
+  text-align: left;
+  color: #fff;
+  margin: 12px 0 0;
+  box-shadow: none;
+}
+.ios18 .weather-air-quality > strong {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ios18 .weather-air-quality > p {
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+.ios18 .weather-aqi-scale {
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #06c686,
+    #fff900,
+    #ff8a00,
+    #ff0829,
+    #ca00fa,
+    #6c0f25
+  );
+  margin-top: 14px;
+  position: relative;
+  border-radius: 5px;
+}
+.ios18 .weather-aqi-scale > i {
+  position: absolute;
+  top: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #444;
+}
+.ios18 .weather-hourly > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border: 0;
+  background: none;
+  min-height: 0;
+}
+.ios18 .weather-hourly header strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+}
+.ios18 .weather-hourly header small {
+  display: block;
+  font-size: 12px;
+  opacity: 0.65;
+}
+.ios18 .weather-mode-switch {
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 22px;
+  background: #0002;
+}
+.ios18 .weather-mode-switch button {
+  border: 0;
+  border-radius: 20px;
+  background: none;
+  color: #fff;
+  padding: 6px 10px;
+}
+.ios18 .weather-mode-switch button[aria-pressed="true"] {
+  background: #fff2;
+}
+.ios18 .weather-hour-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3px;
+  margin-top: 15px;
+}
+.ios18 .weather-hour-grid > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border: 0;
+  background: none;
+  padding: 0;
+  color: #fff;
+}
+.ios18 .weather-hour-grid strong {
+  font-size: 15px;
+  font-weight: 500;
+}
+.ios18 .weather-hour-grid span {
+  font-size: 15px;
+}
+.ios18 .weather-hour-grid svg {
+  fill: #fff1;
+  stroke-width: 2;
+}
+.ios18 .weather-days > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+  padding: 12px 0;
+  background: none;
+  border: 0;
+  border-bottom: 0.5px solid #ffffff2a;
+  color: white;
+  font-size: 17px;
+}
+.ios18 .weather-days > button > i {
+  display: block;
+  flex: 1;
+  height: 5px;
+  background: linear-gradient(90deg, #ffaf00, #ff7c00);
+  border-radius: 4px;
+}
+.ios18 .weather-days > button > span {
+  opacity: 0.5;
+}
+.ios18 .weather-native-toolbar {
+  position: absolute;
+  bottom: -15px;
+  left: 26px;
+  right: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  z-index: 5;
+}
+.ios18 .weather-native-toolbar > button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #acc9ee88;
+  box-shadow: inset 0 1px 2px #d0e4ff77;
+  background: #7092c566;
+  backdrop-filter: blur(20px);
+  color: white;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+.ios18 .weather-city-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 130px;
+  height: 48px;
+  border-radius: 30px;
+  background: #7092c566;
+  border: 1px solid #acc9ee88;
+  backdrop-filter: blur(20px);
+  padding: 0 20px;
+}
+.ios18 .weather-city-dots > button,
+.ios18 .weather-city-dots > span {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff50;
+}
+.ios18 .weather-city-dots > button[aria-current="true"] {
+  background: white;
+}
+.ios18 .weather-native-sheet {
+  position: absolute;
+  inset: 0;
+  background: #16213bef;
+  backdrop-filter: blur(24px);
+  padding: 0 16px 50px;
+  overflow: auto;
+  z-index: 10;
+  color: #fff;
+}
+.ios18 .weather-native-sheet > header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ios18 .weather-native-sheet > header > button {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  border: 0;
+  background: none;
+  color: white;
+  padding: 0;
+  font-size: 16px;
+}
+.ios18 .weather-city-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff20;
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+.ios18 .weather-city-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: none;
+  color: white;
+  padding: 0;
+  font-size: 17px;
+}
+.ios18 .weather-city-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff15;
+  color: #fff;
+  border: 0;
+  border-radius: 20px;
+  margin: 15px 0;
+  padding: 25px;
+  font-size: 22px;
+}
+.ios18 .weather-map-empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 140px;
+  color: #fffa;
+}
+.ios18 .weather-section-detail {
+  padding: 25px 8px;
+  font-size: 18px;
+}
+.ios18 .calibrated-health,
+.ios18 .calibrated-weather {
+  flex-direction: column;
+}
+.ios18 .phone-screen:has(.native-calculator) .status-bar {
+  color: #fff;
+  background: #000;
+}
+.ios18 .phone-screen:has(.native-calculator) .home-indicator:after {
+  background: #fff;
+}
+.ios18 .native-calculator .calc-keypad {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 84.25px;
+}
+.ios18 .native-calculator .calc-keypad > button {
+  grid-column: auto;
+  min-width: 0;
+  max-width: none;
+  height: 84.25px;
+  width: 84.25px;
+  margin: 0;
+  border-radius: 50%;
+}
+.ios18 .native-calculator > output {
+  margin: 0;
+}
+.ios18 .native-calculator .calc-toolbar > button {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(#292929, #191919);
+  color: #fff;
+}
+.ios18 .calibrated-health,
+.ios18 .calibrated-weather {
+  overflow: visible;
+}
+.ios18 .health-native-card {
+  align-items: stretch;
+}
+.ios18 .health-native-card > header,
+.ios18 .health-card-bottom {
+  width: 100%;
+  box-sizing: border-box;
+}
+.ios18 .health-native-card .health-card-bottom {
+  align-items: flex-end;
+  text-align: left;
+}
+.ios18 .phone-screen:has(.calibrated-weather) .status-bar {
+  background: #080c24;
+  color: white;
+}
+.phone-shell.ios18 .phone-screen:has(.calibrated-weather) .status-bar {
+  background: #080c24;
+  color: #fff;
+}
+.phone-shell.ios18
+  .phone-screen:has(.calibrated-weather, .calibrated-health)
+  .home-indicator {
+  height: 18px;
+}
+.ios18 .calibrated-weather[data-empty="true"] .weather-aqi-scale > i {
+  display: none;
+}
+.ios18 .calibrated-weather[data-empty="true"] .weather-days > button > i {
+  background: #ffffff30;
+}

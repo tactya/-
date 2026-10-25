@@ -1,0 +1,743 @@
+/* Calibrated against user supplied real-screen references, 2026-10-25.
+   ios18 is a compatibility selector, not a restriction on system version. */
+.ios18 .wallpaper-silver {
+  background: #ddd;
+  color: #111;
+}
+.ios18 .wallpaper-silver .status-bar {
+  color: #111;
+}
+.ios18 .wallpaper-silver .home-app-grid .app-name,
+.ios18 .wallpaper-silver .home-search {
+  color: #111;
+  text-shadow: none;
+}
+.ios18 .native-settings {
+  position: relative;
+  --ios-group-radius: 26px;
+  --ios-row: 51px;
+  background: #f2f1f7;
+}
+.ios18 .native-settings[data-root="true"] .settings-native-nav {
+  height: 54px;
+  min-height: 54px;
+  background: transparent;
+}
+.ios18 .native-settings .settings-native-scroll {
+  padding: 0 16px 100px;
+}
+.ios18 .native-settings[data-root="true"] h1 {
+  margin: 7px 0 10px;
+  line-height: 41px;
+  font-size: 34px;
+}
+.ios18 .native-settings .settings-account {
+  height: 88px;
+  min-height: 88px;
+  border-radius: 26px;
+  margin: 0 0 35px;
+  box-shadow: none;
+}
+.ios18 .native-settings .settings-account strong {
+  font-size: 20px;
+}
+.ios18 .native-settings .settings-account small {
+  font-size: 13px;
+  color: #8e8e93;
+}
+.ios18 .native-settings .settings-account > span {
+  width: 59px;
+  height: 59px;
+}
+.ios18 .native-settings .settings-group {
+  border-radius: 26px;
+  margin: 0 0 35px;
+  box-shadow: none;
+}
+.ios18 .native-settings .settings-native-row {
+  padding: 9px 14px;
+  gap: 14px;
+  min-height: 51px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+.ios18 .native-settings .settings-glyph {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+.ios18 .native-settings .settings-native-row:after {
+  left: 56px;
+  right: 16px;
+  background: #dcdce0;
+}
+.ios18 .native-settings .settings-native-row small {
+  font-size: 17px;
+  color: #999;
+}
+.ios18 .native-settings > .settings-search {
+  position: absolute;
+  z-index: 10;
+  left: 27px;
+  right: 27px;
+  bottom: 12px;
+  height: 47px;
+  margin: 0;
+  border-radius: 27px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 14px;
+  background: linear-gradient(
+    110deg,
+    #d4f7ffb3 0%,
+    #ffffffdf 21%,
+    #ffffffe0 85%
+  );
+  border: 1px solid #d4d4d699;
+  box-shadow:
+    inset 0 1px 2px #fff,
+    0 4px 15px #0000000c;
+  backdrop-filter: blur(24px);
+}
+.ios18 .native-settings > .settings-search > input {
+  height: 45px;
+  font-weight: 500;
+}
+.ios18 .native-settings > .settings-search > svg {
+  color: #111;
+  width: 22px;
+  height: 22px;
+}
+/* WeChat has its own flat chrome; system glass does not bleed into this App. */
+.ios18 .wechat-ui {
+  background: #ededed;
+}
+.ios18 .wechat-ui .wx-nav {
+  height: 44px;
+  min-height: 44px;
+  background: #ededed;
+  border-bottom: 0.5px solid #e1e1e1;
+}
+.ios18 .wechat-ui .wx-nav strong {
+  font-size: 17px;
+  font-weight: 600;
+}
+.ios18 .wechat-ui .wx-nav button {
+  color: #111;
+}
+.ios18 .wechat-ui .skin-scroll {
+  background: #ededed;
+}
+.ios18 .wechat-ui .wx-chat-row {
+  height: 71px;
+  min-height: 71px;
+  padding: 10px 16px;
+  gap: 12px;
+  background: white;
+  border-bottom: 0;
+  position: relative;
+}
+.ios18 .wechat-ui .wx-chat-row:after {
+  position: absolute;
+  content: "";
+  height: 0.5px;
+  background: #e6e6e6;
+  left: 75px;
+  right: 0;
+  bottom: 0;
+}
+.ios18 .wechat-ui .wx-chat-avatar,
+.ios18 .wechat-ui .wx-chat-avatar .skin-avatar {
+  width: 47px;
+  height: 47px;
+  flex: none;
+  border-radius: 5px;
+}
+.ios18 .wechat-ui .wx-chat-row strong {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #111;
+}
+.ios18 .wechat-ui .wx-chat-row p {
+  font-size: 14px;
+  color: #b2b2b2;
+  margin-top: 3px;
+}
+.ios18 .wechat-ui .wx-chat-row time {
+  font-size: 11px;
+  color: #b7b7b7;
+  top: 13px;
+}
+.ios18 .wechat-ui .wx-bottom {
+  height: 59px;
+  min-height: 59px;
+  background: #f7f7f7;
+  border-top: 0.5px solid #ddd;
+  gap: 0;
+  padding: 5px 0 3px;
+}
+.ios18 .wechat-ui .wx-bottom svg {
+  width: 27px;
+  height: 27px;
+  stroke-width: 1.8;
+}
+.ios18 .wechat-ui .wx-bottom button {
+  gap: 2px;
+  font-size: 11px;
+  color: #151515;
+}
+.ios18 .wechat-ui .wx-bottom button.selected {
+  color: #07c160;
+}
+.ios18 .wechat-ui .wx-bottom button.selected svg {
+  fill: #07c160;
+  stroke: #07c160;
+}
+.ios18 .wechat-ui .skin-messages {
+  padding: 12px 12px 18px;
+  background: #ededed;
+  gap: 16px;
+}
+.ios18 .wechat-ui .skin-message {
+  gap: 12px;
+  align-items: flex-start;
+}
+.ios18 .wechat-ui .skin-message > .skin-avatar {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 4px;
+}
+.ios18 .wechat-ui .skin-bubble {
+  max-width: 245px;
+  min-height: 40px;
+  padding: 9px 12px;
+  border-radius: 4px;
+  font-size: 17px;
+  line-height: 23px;
+  background: #fff;
+  color: #111;
+  box-shadow: none;
+  text-align: left;
+}
+.ios18 .wechat-ui .skin-message.outgoing .skin-bubble {
+  background: #95ec69;
+}
+.ios18 .wechat-ui .skin-bubble:before {
+  top: 13px;
+}
+.ios18 .wechat-ui .skin-compose {
+  min-height: 53px;
+  height: 53px;
+  gap: 12px;
+  background: #f7f7f7;
+  padding: 7px 10px;
+  border-top: 0.5px solid #ddd;
+}
+.ios18 .wechat-ui .skin-compose > .native-compose-field {
+  height: 37px;
+  min-height: 37px;
+  border-radius: 4px;
+  background: white;
+}
+.ios18 .wechat-ui .skin-compose > svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.8;
+}
+.ios18 .wechat-ui .wx-discovery {
+  margin: 0;
+  padding: 0 17px;
+  height: 56px;
+  min-height: 56px;
+  gap: 18px;
+  border-radius: 0;
+  background: #fff;
+  font-size: 17px;
+  box-shadow: none;
+  color: #111;
+  border: 0;
+}
+.ios18 .wechat-ui .wx-discovery > span {
+  color: #b7b7b7;
+  margin-left: auto;
+  font-size: 27px;
+  font-weight: 300;
+}
+.ios18 .wechat-ui .wx-discover-groups > .wx-discovery {
+  margin-bottom: 8px;
+}
+.ios18 .wechat-ui[data-tab="我"]:not([data-thread="true"]) .wx-nav {
+  visibility: hidden;
+  border: 0;
+  background: #fff;
+}
+.ios18 .wechat-ui[data-tab="我"] .skin-scroll {
+  background: #ededed;
+}
+.ios18 .wechat-ui .wx-profile {
+  height: 140px;
+  padding: 24px 28px 30px;
+  background: #fff;
+  gap: 20px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+.ios18 .wechat-ui .wx-profile > .skin-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+}
+.ios18 .wechat-ui .wx-profile h2 {
+  font-size: 23px;
+  margin: 2px 0 8px;
+}
+.ios18 .wechat-ui .wx-profile small {
+  font-size: 15px;
+  color: #999;
+}
+.ios18 .wechat-ui .wx-profile-status {
+  display: block;
+  border: 0.5px solid #ddd;
+  border-radius: 15px;
+  background: none;
+  color: #888;
+  padding: 3px 8px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+.ios18 .wechat-ui .wx-profile-menu .wx-discovery {
+  position: relative;
+}
+.ios18 .wechat-ui .wx-profile-menu .wx-discovery:not(:first-child):after {
+  content: "";
+  position: absolute;
+  left: 55px;
+  right: 0;
+  top: 0;
+  height: 0.5px;
+  background: #eee;
+}
+.ios18 .wechat-ui .wx-profile-menu .wx-discovery:first-child,
+.ios18 .wechat-ui .wx-profile-menu .wx-discovery:nth-child(6) {
+  margin-bottom: 8px;
+}
+/* Control center: six-row module layout measured from supplied reference #11. */
+.ios18 .system-panel.device-control {
+  padding: 166px 37px 40px;
+  background: #56585bbd;
+  backdrop-filter: blur(35px) saturate(0.75);
+  color: white;
+}
+.ios18 .device-control .cc-close,
+.ios18 .device-control .cc-edit {
+  position: absolute;
+  top: 25px;
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  background: #ffffff30;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+.ios18 .device-control .cc-close {
+  right: 37px;
+  opacity: 1;
+}
+.ios18 .device-control .cc-edit {
+  left: 37px;
+}
+.ios18 .device-control .cc-close svg,
+.ios18 .device-control .cc-edit svg {
+  width: 22px;
+  height: 22px;
+}
+.ios18 .device-control .cc-status {
+  position: absolute;
+  left: 41px;
+  right: 41px;
+  top: 111px;
+  margin: 0;
+  font-size: 15px;
+}
+.ios18 .device-control .cc-status > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 1;
+}
+.ios18 .device-control .cc-status > span:last-child {
+  font-size: 12px;
+  opacity: 0.6;
+}
+.ios18 .device-control .cc-grid {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 70px);
+  gap: 14px;
+  grid-auto-flow: row;
+}
+.ios18 .device-control .cc-connect,
+.ios18 .device-control .cc-music,
+.ios18 .device-control .cc-home,
+.ios18 .device-control .cc-square,
+.ios18 .device-control .cc-focus,
+.ios18 .device-control .cc-slider {
+  background: #ffffff30;
+  border: 1px solid #ffffff70;
+  box-shadow: inset 0 1px 2px #ffffff80;
+  backdrop-filter: blur(10px);
+}
+.ios18 .device-control .cc-connect {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  border-radius: 32px;
+  padding: 13px;
+  gap: 12px;
+}
+.ios18 .device-control .cc-music {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+  border-radius: 32px;
+  gap: 25px;
+  padding: 18px 12px;
+}
+.ios18 .device-control .cc-connect > button {
+  width: 55px;
+  height: 55px;
+  background: #ffffff30;
+}
+.ios18 .device-control .cc-connect > button.blue,
+.ios18 .device-control .cc-connect .blue {
+  background: #2499fb;
+}
+.ios18 .device-control .cc-connect > button.orange {
+  background: #ff9500;
+}
+.ios18 .device-control .cc-grid > .cc-square:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.ios18 .device-control .cc-grid > .cc-square:nth-child(4) {
+  grid-column: 2;
+  grid-row: 3;
+}
+.ios18 .device-control .cc-slider {
+  grid-row: 3 / span 2;
+  border-radius: 36px;
+}
+.ios18 .device-control .cc-slider:nth-child(5) {
+  grid-column: 3;
+}
+.ios18 .device-control .cc-slider:nth-child(6) {
+  grid-column: 4;
+}
+.ios18 .device-control .cc-focus {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  border-radius: 36px;
+  gap: 10px;
+}
+.ios18 .device-control .cc-home {
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 2;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  font-size: 14px;
+}
+.ios18 .device-control .cc-square {
+  border-radius: 50%;
+}
+.ios18 .device-control .cc-tool-0 {
+  grid-column: 3;
+  grid-row: 5;
+}
+.ios18 .device-control .cc-tool-1 {
+  grid-column: 4;
+  grid-row: 5;
+}
+.ios18 .device-control .cc-tool-2 {
+  grid-column: 3;
+  grid-row: 6;
+}
+.ios18 .device-control .cc-tool-3 {
+  grid-column: 4;
+  grid-row: 6;
+}
+.ios18 .device-control .cc-bottom-tool {
+  grid-row: 7;
+}
+.ios18 .device-control .cc-bottom-0 {
+  grid-column: 1;
+}
+.ios18 .device-control .cc-bottom-1 {
+  grid-column: 2;
+}
+.ios18 .device-control .cc-bottom-2 {
+  grid-column: 3;
+}
+.ios18 .device-control .cc-white {
+  background: #fafafa;
+  color: #f9a3ad;
+}
+.ios18 .device-control .cc-dismiss {
+  display: none;
+}
+.ios18 .wallpaper-silver .wallpaper-orb {
+  display: none;
+}
+.ios18 .native-settings[data-root="true"] .settings-native-nav {
+  height: 51px;
+  min-height: 51px;
+}
+.ios18 .native-settings[data-root="true"] h1 {
+  margin-bottom: 6px;
+}
+.ios18 .phone-screen:has(.device-control) .status-bar {
+  opacity: 0;
+  pointer-events: none;
+}
+.ios18 .device-control .cc-slider > svg {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  width: 28px;
+  height: 28px;
+}
+.ios18
+  .wechat-ui[data-tab="微信"][data-utility="false"]
+  .wx-nav
+  > button:first-child {
+  visibility: visible;
+}
+.ios18 .wechat-ui .wx-bottom button:nth-child(3).selected svg polygon {
+  stroke: white;
+  fill: white;
+}
+/* Use fonts already installed on the platform; never bundle proprietary fonts. */
+.phone-shell.ios18 {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+}
+.phone-shell.ios18 button,
+.phone-shell.ios18 input,
+.phone-shell.ios18 textarea {
+  font-family: inherit;
+}
+.ios18 .wallpaper-apple-wwdc26 {
+  background: #201947
+    url("https://developer.apple.com/wwdc26/wallpaper/downloads/wwdc26-wallpaper-iphone.png")
+    center/cover no-repeat;
+}
+.ios18 .wallpaper-apple-wwdc26 .wallpaper-orb {
+  display: none;
+}
+.ios18 .wallpaper-apple-wwdc26:not(.in-app) .status-bar,
+.ios18 .wallpaper-apple-wwdc26 .app-name {
+  color: white;
+  text-shadow: 0 1px 3px #0005;
+}
+/* Reference #11, normalized from 1206 × 2622 to 393 × 852. */
+.ios18 .system-panel.device-control {
+  padding: 166px 37px 40px;
+  background: #6669;
+  backdrop-filter: blur(55px) saturate(0.3) brightness(0.65);
+  overflow: hidden;
+}
+.ios18 .device-control .cc-grid {
+  grid-template-columns: repeat(4, 69px);
+  grid-template-rows: repeat(7, 69px);
+  gap: 14px;
+}
+.ios18 .device-control .cc-current {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ios18 .cc-current > span {
+  border-radius: 50%;
+  background: #009aff;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+}
+.ios18 .device-control .cc-status {
+  top: 108px;
+  left: 42px;
+  right: 42px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+}
+.ios18 .device-control .cc-status > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ios18 .device-control .cc-status > div > span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  opacity: 1;
+  white-space: nowrap;
+}
+.ios18 .device-control .cc-status small {
+  font-size: 9px;
+  border: 1px solid #fffc;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+.ios18 .device-control .cc-status > span:last-child {
+  font-size: 15px;
+  opacity: 1;
+  gap: 3px;
+}
+.ios18 .device-control .cc-page-rail {
+  position: absolute;
+  right: 8px;
+  top: 337px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.ios18 .cc-page-rail button {
+  border: 0;
+  background: none;
+  color: #fffa;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.ios18 .cc-page-rail button:first-child {
+  color: white;
+}
+.ios18 .cc-page-rail svg {
+  width: 19px;
+  height: 19px;
+}
+.ios18 .device-control .cc-connect,
+.ios18 .device-control .cc-music,
+.ios18 .device-control .cc-home {
+  border-radius: 31px;
+}
+.ios18 .device-control .cc-connect {
+  padding: 13px;
+  gap: 13px;
+  grid-template-columns: 55px 55px;
+  grid-template-rows: 55px 55px;
+}
+.ios18 .device-control .cc-connect > button {
+  width: 55px;
+  height: 55px;
+  border: 0;
+}
+.ios18 .device-control .cc-small-connections {
+  display: grid;
+  grid-template-columns: 25px 25px;
+  grid-template-rows: 25px 25px;
+  gap: 5px;
+}
+.ios18 .device-control .cc-small-connections button {
+  width: 25px;
+  height: 25px;
+  border: 0;
+}
+.ios18 .device-control .cc-music {
+  padding: 13px 15px;
+  gap: 0;
+  justify-content: space-between;
+  text-align: left;
+}
+.ios18 .device-control .cc-media-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ios18 .cc-media-top > span {
+  width: 51px;
+  height: 51px;
+  border-radius: 12px;
+  background: #ffffff22;
+  display: grid;
+  place-items: center;
+}
+.ios18 .device-control .cc-media-title {
+  display: block;
+}
+.ios18 .cc-media-title strong {
+  font-size: 14px;
+  display: block;
+  font-weight: 600;
+}
+.ios18 .device-control .cc-media-title small {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.55;
+  display: block;
+  margin-top: 2px;
+}
+.ios18 .device-control .cc-music button svg {
+  width: 25px;
+  height: 25px;
+}
+.ios18 .device-control .cc-music button {
+  border: 0;
+  background: none;
+  color: white;
+  padding: 0;
+}
+.ios18 .device-control .cc-square svg {
+  width: 30px;
+  height: 30px;
+}
+.ios18 .cc-rotation {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.ios18 .cc-rotation svg:last-child {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+.ios18 .device-control .cc-slider:nth-child(5) > svg {
+  color: #ffd84a;
+}
+.ios18 .device-control .cc-slider:nth-child(6) > svg {
+  color: #00bed4;
+}
+.ios18 .device-control .cc-square,
+.ios18 .device-control .cc-focus,
+.ios18 .device-control .cc-slider,
+.ios18 .device-control .cc-home,
+.ios18 .device-control .cc-connect,
+.ios18 .device-control .cc-music {
+  background-color: #ffffff45;
+  border: 0.7px solid #ffffff65;
+  box-shadow:
+    inset 0 1px 2px #ffffff80,
+    0 1px 2px #0003;
+}
+.ios18 .device-control .cc-white {
+  background: #fafafa;
+  color: #ffadb7;
+}

@@ -1,0 +1,75 @@
+.original-icon-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.original-icon-wrap > .original-app-artwork {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: none;
+  box-shadow: none;
+}
+.phone-shell .app-icon:has(.original-icon-wrap) {
+  background: transparent !important;
+  box-shadow: none;
+  border: 0;
+}
+.original-calendar {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #080808;
+  pointer-events: none;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    "Microsoft YaHei", sans-serif;
+}
+.original-calendar small {
+  position: absolute;
+  top: 12%;
+  font-size: 11px;
+  line-height: 1.1;
+  color: #ff3b30;
+  font-weight: 600;
+}
+.original-calendar b {
+  position: absolute;
+  top: 27%;
+  font-size: 39px;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+.original-clock-hands {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.small .original-calendar small {
+  font-size: 5px;
+}
+.small .original-calendar b {
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+.original-icon-wrap {
+  container-type: size;
+}
+.original-calendar small,
+.small .original-calendar small {
+  font-size: 18cqw;
+}
+.original-calendar b,
+.small .original-calendar b {
+  font-size: 63cqw;
+  letter-spacing: -3cqw;
+}

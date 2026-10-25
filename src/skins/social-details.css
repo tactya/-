@@ -1,0 +1,351 @@
+.ios18 .app-post-detail {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #0f1419;
+  font-size: 17px;
+}
+.ios18 .post-detail-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 14px;
+  border-bottom: 0.5px solid #eff0f2;
+  background: #fff;
+}
+.ios18 .post-detail-nav > strong {
+  font-size: 20px;
+  font-weight: 700;
+}
+.ios18 .post-detail-nav > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ios18 .post-detail-nav button {
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: none;
+  color: inherit;
+  padding: 0;
+  width: 28px;
+  height: 32px;
+}
+.ios18 .post-detail-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+}
+.ios18 .post-detail-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 14px 12px;
+}
+.ios18 .post-detail-author > .catalog-avatar {
+  width: 43px;
+  height: 43px;
+  flex: none;
+  border-radius: 50%;
+}
+.ios18 .post-detail-author > div {
+  flex: 1;
+  min-width: 0;
+}
+.ios18 .post-detail-author strong {
+  display: block;
+  font-size: 17px;
+}
+.ios18 .post-detail-author small {
+  display: block;
+  font-size: 14px;
+  color: #65737f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 3px;
+}
+.ios18 .post-follow {
+  border: 0;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 18px;
+}
+.ios18 .post-detail-body {
+  padding: 4px 14px 20px;
+  font-size: 18px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.ios18 .post-detail-body p {
+  margin: 0;
+}
+.ios18 .post-detail-body .catalog-media {
+  border-radius: 14px;
+  margin: 12px 0 0;
+}
+.ios18 .x-post-metadata {
+  margin: 0 14px;
+  padding: 0 0 14px;
+  font-size: 14px;
+  color: #63717c;
+}
+.ios18 .x-post-metadata b {
+  color: #0f1419;
+}
+.ios18 .post-detail-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 12px;
+  border-top: 0.5px solid #eff0f2;
+  border-bottom: 0.5px solid #eff0f2;
+  margin: 0 14px;
+  color: #62727c;
+}
+.ios18 .post-detail-actions button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  background: none;
+  padding: 0;
+  font-size: 12px;
+  color: inherit;
+}
+.ios18 .post-detail-actions svg {
+  width: 21px;
+  height: 21px;
+}
+.ios18 .x-related-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 14px;
+  border-bottom: 0.5px solid #eff0f2;
+}
+.ios18 .x-related-row button {
+  border: 0;
+  background: none;
+  color: #60707a;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ios18 .post-detail-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px 14px;
+  border-bottom: 0.5px solid #eff0f2;
+}
+.ios18 .post-detail-comment > .catalog-avatar {
+  width: 37px;
+  height: 37px;
+  flex: none;
+}
+.ios18 .post-detail-comment > div {
+  flex: 1;
+  min-width: 0;
+}
+.ios18 .post-detail-comment strong {
+  font-size: 15px;
+}
+.ios18 .post-detail-comment p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 3px 0;
+}
+.ios18 .post-detail-comment > svg {
+  color: #a7aeb5;
+}
+.ios18 .post-comment-actions {
+  display: flex;
+  gap: 45px;
+  color: #81909a;
+  margin-top: 9px;
+}
+.ios18 .post-comment-actions button {
+  border: 0;
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+.ios18 .post-comment-actions .liked {
+  color: #f91880;
+}
+.ios18 .post-detail-reply {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 53px;
+  padding: 9px 14px;
+  border-top: 0.5px solid #eee;
+  background: #fff;
+}
+.ios18 .post-detail-reply > .catalog-avatar {
+  width: 31px;
+  height: 31px;
+  flex: none;
+}
+.ios18 .post-detail-reply input {
+  border: 0;
+  background: #f4f4f4;
+  border-radius: 25px;
+  padding: 10px 13px;
+  min-width: 0;
+  flex: 1;
+  font-size: 15px;
+  color: #111;
+  box-shadow: none;
+}
+.ios18 .post-detail-reply > button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1d9bf0;
+}
+.ios18 .post-detail-reply > button:disabled {
+  opacity: 0.3;
+}
+.ios18 .post-comments-empty {
+  padding: 35px 20px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+.ios18 .weibo-post-detail {
+  color: #222;
+}
+.ios18 .weibo-post-detail .post-detail-author > .catalog-avatar {
+  width: 47px;
+  height: 47px;
+}
+.ios18 .weibo-post-detail .post-detail-author strong {
+  font-weight: 600;
+}
+.ios18 .weibo-post-detail .post-detail-author > button {
+  border: 0;
+  background: none;
+  color: #999;
+  padding: 5px;
+}
+.ios18 .weibo-post-detail .post-detail-body {
+  font-size: 17px;
+}
+.ios18 .weibo-share-options {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 12px 24px;
+  border-bottom: 9px solid #f0f0f0;
+}
+.ios18 .weibo-share-options button {
+  display: grid;
+  place-items: center;
+  width: 49px;
+  height: 49px;
+  background: #f8f8f8;
+  border: 0;
+  border-radius: 50%;
+  color: #70bca3;
+}
+.ios18 .weibo-share-options button:first-child {
+  color: #d7924d;
+  background: #fff5e9;
+}
+.ios18 .weibo-share-options button:nth-child(3) {
+  color: #82bf7a;
+}
+.ios18 .weibo-share-options button:nth-child(4) {
+  color: #45a8d0;
+}
+.ios18 .weibo-share-options button:last-child {
+  color: #dfb453;
+}
+.ios18 .weibo-detail-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px solid #ddd;
+  height: 49px;
+  flex: none;
+}
+.ios18 .weibo-detail-tabs button {
+  position: relative;
+  border: 0;
+  background: none;
+  color: #999;
+  padding: 0;
+  font-size: 15px;
+}
+.ios18 .weibo-detail-tabs button[aria-pressed="true"] {
+  color: #222;
+  font-weight: 600;
+}
+.ios18 .weibo-detail-tabs button[aria-pressed="true"]:after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: #ff8200;
+}
+.ios18 .weibo-sort {
+  display: block;
+  margin: 13px 15px 5px auto;
+  background: none;
+  border: 0;
+  color: #7b8e9d;
+  padding: 0;
+  font-size: 14px;
+}
+.ios18 .weibo-bottom-actions .post-detail-actions {
+  padding: 10px;
+  margin: 0;
+}
+.ios18 .weibo-bottom-actions .post-detail-actions button {
+  font-size: 12px;
+}
+.ios18 .weibo-post-detail .post-detail-reply input {
+  background: #f4f4f4;
+}
+.ios18 .post-options-menu {
+  position: absolute;
+  top: 48px;
+  right: 12px;
+  z-index: 10;
+  min-width: 175px;
+  background: #f7f7f7eb;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 25px #0003;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.ios18 .post-options-menu > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  border-bottom: 0.5px solid #ddd;
+  background: none;
+  color: #111;
+  font-size: 15px;
+}
+.ios18 .post-detail-body > .rich-body {
+  font-size: inherit;
+  line-height: inherit;
+}

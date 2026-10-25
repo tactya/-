@@ -1,0 +1,898 @@
+/* Selected UI rules directly adapted from dudwo5/Mymy main/index.html.
+ * Used under author permission reported by the user, 2026-10-25. Not relicensed MIT.
+ * Original data, media, URLs and global selectors excluded; selectors scoped only.
+ */
+.mymy-ui .ig {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  color: #111;
+}
+.mymy-ui .igh {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 52px 16px 8px;
+  flex: none;
+}
+.mymy-ui .igh span:first-child {
+  width: 28px;
+}
+.mymy-ui .igl2 {
+  flex: 1;
+  text-align: center;
+  font:
+    italic 700 27px/1 "Snell Roundhand",
+    "Brush Script MT",
+    cursive;
+}
+.mymy-ui .igh .un {
+  font-size: 20px;
+}
+.mymy-ui .igb {
+  flex: 1;
+  overflow-y: auto;
+}
+.mymy-ui .sts {
+  display: flex;
+  gap: 12px;
+  padding: 10px 14px;
+  overflow-x: auto;
+}
+.mymy-ui .st {
+  text-align: center;
+  width: 72px;
+  flex: none;
+  cursor: pointer;
+}
+.mymy-ui .st small {
+  display: block;
+  font-size: 11px;
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mymy-ui .sr {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2.5px solid #4cd04c;
+  display: flex;
+}
+.mymy-ui .sr.pk {
+  border-color: #e1306c;
+}
+.mymy-ui .sr:not(.on) {
+  border-color: transparent;
+}
+.mymy-ui .sr img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f1f1f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.mymy-ui .sr i {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  font-style: normal;
+  text-align: center;
+  line-height: 22px;
+  border: 2px solid #fff;
+  font-size: 15px;
+}
+.mymy-ui .igp {
+  padding-bottom: 10px;
+}
+.mymy-ui .igph {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+}
+.mymy-ui .igph img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.mymy-ui .igph div {
+  flex: 1;
+  font-size: 14px;
+}
+.mymy-ui .iga {
+  display: flex;
+  gap: 16px;
+  padding: 10px 14px 4px;
+  align-items: center;
+}
+.mymy-ui .igc {
+  padding: 2px 14px;
+  font-size: 14px;
+}
+.mymy-ui .igt {
+  padding: 2px 14px;
+  font-size: 12px;
+  color: #889;
+}
+.mymy-ui .pf {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 10px 16px;
+}
+.mymy-ui .sr.big {
+  width: 88px;
+  height: 88px;
+  flex: none;
+}
+.mymy-ui .ps {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  text-align: center;
+}
+.mymy-ui .ps b {
+  display: block;
+  font-size: 17px;
+}
+.mymy-ui .ps small {
+  font-size: 13px;
+}
+.mymy-ui .pn {
+  padding: 2px 16px;
+  font-size: 14px;
+}
+.mymy-ui .ptab {
+  display: flex;
+  border-bottom: 1px solid #e6e6ea;
+}
+.mymy-ui .ptab div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 9px 0;
+  color: #889;
+}
+.mymy-ui .ptab .on {
+  color: #111;
+  border-bottom: 2px solid #111;
+}
+.mymy-ui .pg2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+}
+.mymy-ui .pg2 img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  cursor: pointer;
+}
+.mymy-ui .igh span.bkb {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  padding-bottom: 3px;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.mymy-ui .igph {
+  gap: 10px;
+}
+.mymy-ui .igpn {
+  flex: 1;
+  min-width: 0;
+}
+.mymy-ui .igpn b {
+  display: block;
+  font-size: 14px;
+}
+.mymy-ui .igpn small {
+  display: block;
+  font-size: 11px;
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mymy-ui .carw {
+  position: relative;
+}
+.mymy-ui .iga {
+  gap: 14px;
+  padding: 8px 14px 4px;
+}
+.mymy-ui .iga span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.mymy-ui .iga b {
+  font-size: 15px;
+  font-weight: 600;
+}
+.mymy-ui .igph .av2 {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.mymy-ui .igpn b {
+  font-size: 13px;
+}
+.mymy-ui .igpn small {
+  font-size: 10.5px;
+}
+.mymy-ui .igph {
+  padding: 8px 14px;
+}
+.mymy-ui .iga svg {
+  width: 24px;
+  height: 24px;
+}
+.mymy-ui .iga i.rd {
+  display: flex;
+  font-style: normal;
+}
+.mymy-ui .iga i.rd svg {
+  width: 26px;
+  height: 26px;
+}
+.mymy-ui .iga b {
+  font-size: 13px;
+}
+.mymy-ui .iga {
+  gap: 12px;
+}
+.mymy-ui .lk2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px 0;
+  font-size: 12.5px;
+}
+.mymy-ui .igc {
+  font-size: 12.5px;
+  padding-top: 2px;
+}
+.mymy-ui .igt {
+  font-size: 11px;
+}
+.mymy-ui .cmall {
+  padding: 2px 14px;
+  font-size: 12.5px;
+  color: #889;
+}
+.mymy-ui .cmb2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-top: 1px solid #eee;
+  flex: none;
+}
+.mymy-ui .cmb2 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.mymy-ui .cmb2 input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  background: transparent;
+  color: #111;
+  min-width: 0;
+}
+.mymy-ui .cmb2 button {
+  border: 0;
+  background: none;
+  color: #3b5bff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.mymy-ui .carw {
+  position: relative;
+}
+.mymy-ui .ptab div {
+  color: #6b7280;
+}
+.mymy-ui .ptab div.on {
+  color: #111;
+}
+.mymy-ui .kzkk {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mymy-ui .kzkh {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 16px 8px;
+  flex: none;
+}
+.mymy-ui .kzhl {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.mymy-ui .kzhl b {
+  font-size: 17px;
+  font-weight: 700;
+}
+.mymy-ui .kzti {
+  font-size: 20px;
+  font-weight: 700;
+}
+.mymy-ui .kzic {
+  display: flex;
+  gap: 15px;
+}
+.mymy-ui .kzic svg {
+  width: 21px;
+  height: 21px;
+}
+.mymy-ui .kzkc2 {
+  display: flex;
+  gap: 7px;
+  padding: 6px 16px 10px;
+  flex: none;
+}
+.mymy-ui .kzkpl {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 16px;
+  border-radius: 17px;
+  background: #f1f1f3;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+.mymy-ui .kzkpl.on {
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+}
+.mymy-ui .kzhd {
+  flex: none;
+  background: #fff;
+  transition: margin-top 0.25s;
+  position: relative;
+  z-index: 2;
+}
+.mymy-ui .kzkb {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 92px;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+.mymy-ui .kzksec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.mymy-ui .kzkr {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+.mymy-ui .kzkcr {
+  padding: 7px 16px;
+}
+.mymy-ui .kzkn {
+  flex: 1;
+  min-width: 0;
+}
+.mymy-ui .kzkn b {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mymy-ui .kzkn small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #8a8a90;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mymy-ui .kzkmt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  font-size: 11.5px;
+  color: #999;
+  flex: none;
+}
+.mymy-ui .kzkbd {
+  background: #f0562f;
+  color: #fff;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 19px;
+  height: 19px;
+  border-radius: 10px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.mymy-ui .kzknv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0 26px;
+  background: rgba(255, 255, 255, 0.96);
+}
+.mymy-ui .kzknv svg {
+  width: 26px;
+  height: 26px;
+}
+.mymy-ui .kzknv > div {
+  position: relative;
+  color: #b5b5ba;
+  cursor: pointer;
+}
+.mymy-ui .kzknv > div.on {
+  color: #111;
+}
+.mymy-ui .kzknv .kzkbd {
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  border: 2px solid #fff;
+  font-size: 10px;
+}
+.mymy-ui .kzth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 12px 8px;
+  background: rgba(190, 208, 224, 0.92);
+  flex: none;
+}
+.mymy-ui .kzname {
+  font-weight: 700;
+  font-size: 16px;
+}
+.mymy-ui .kzpill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 17px;
+  background: rgba(215, 230, 244, 0.75);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.mymy-ui .kzpill b {
+  font-size: 14px;
+  font-weight: 600;
+}
+.mymy-ui .kzm {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  max-width: 100%;
+}
+.mymy-ui .kzm.kzmy {
+  justify-content: flex-end;
+  padding-left: 40px;
+}
+.mymy-ui .kzm.kzot {
+  flex-wrap: wrap;
+  padding-left: 42px;
+  position: relative;
+  padding-right: 40px;
+}
+.mymy-ui .kzm.first {
+  margin-top: 8px;
+}
+.mymy-ui .kzbub {
+  padding: 8px 11px;
+  border-radius: 12px;
+  font-size: 14.5px;
+  line-height: 1.35;
+  word-break: break-word;
+  position: relative;
+  max-width: 78%;
+}
+.mymy-ui .kzm.kzot .kzbub {
+  background: #fff;
+}
+.mymy-ui .kzm.kzmy .kzbub {
+  background: #fee500;
+}
+.mymy-ui .kzbub.kzimg {
+  padding: 0;
+  overflow: hidden;
+  background: transparent !important;
+  max-width: 60%;
+}
+.mymy-ui .kzbub.kzimg img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+.mymy-ui .kzm.kzmy.first .kzbub.kzimg::before {
+  display: none;
+}
+.mymy-ui .kzt {
+  font-size: 10px;
+  color: #556;
+  white-space: nowrap;
+}
+.mymy-ui .kzmn {
+  width: 100%;
+  font-size: 11.5px;
+  color: #334;
+  margin: 0 0 3px 2px;
+}
+.mymy-ui .kzmav {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mymy-ui .kzmav .kzka {
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+}
+.mymy-ui .kzinp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 10px 26px;
+  padding: 5px;
+  border-radius: 26px;
+  background: rgba(215, 230, 244, 0.8);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  flex: none;
+}
+.mymy-ui .kzinp input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  font-size: 14.5px;
+  outline: none;
+  color: #111;
+  min-width: 0;
+}
+.mymy-ui .kzpl2 {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-size: 22px;
+  color: #111;
+}
+.mymy-ui .kzem {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+}
+.mymy-ui .kzinp button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 0;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #111;
+}
+.mymy-ui .kzinp button.go {
+  background: #fee500;
+}
+.mymy-ui .sts .sr.on {
+  border: 3px solid transparent;
+  padding: 2px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, #fdc468, #f5522d, #d6249f, #8a3ab9) border-box;
+}
+.mymy-ui .sts .sr.on.seen {
+  border: 3px solid #dbdbdb;
+  background: none;
+}
+.mymy-ui .kzcs {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+}
+.mymy-ui .kzbk {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.mymy-ui .kzcs.out .kzbk {
+  opacity: 0;
+  transition: 0.2s;
+}
+.mymy-ui .kzsh {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 72%;
+  background: #fff;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  flex-direction: column;
+  color: #111;
+}
+.mymy-ui .kzcs.out .kzsh {
+  transform: translateY(100%);
+  transition: 0.22s;
+}
+.mymy-ui .sr.on.cf {
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, #1fd13b, #a6e22e) border-box;
+}
+.mymy-ui .sr.on.cf.seen {
+  border: 3px solid #dbdbdb;
+  background: none;
+}
+.mymy-ui .kzmav {
+  position: relative;
+  display: flex;
+  flex: none;
+}
+.mymy-ui .kzmav .se {
+  width: 34px;
+  height: 34px;
+}
+.mymy-ui .kzxw {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  color: #0f1419;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, "Apple SD Gothic Neo", system-ui, sans-serif;
+}
+.mymy-ui .kzxh {
+  position: relative;
+  flex: none;
+  height: 46px;
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mymy-ui .kzxlg {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+}
+.mymy-ui .kzxtb {
+  flex: none;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border-bottom: 1px solid #eff3f4;
+  position: relative;
+}
+.mymy-ui .kzxtb span {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #536471;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.mymy-ui .kzxtb span.on {
+  color: #0f1419;
+  font-weight: 700;
+}
+.mymy-ui .kzxtb b {
+  position: absolute;
+  right: 12px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #0f1419;
+}
+.mymy-ui .kzxfd {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 140px;
+  -webkit-overflow-scrolling: touch;
+}
+.mymy-ui .kzxfd::-webkit-scrollbar {
+  display: none;
+}
+.mymy-ui .kzxt {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px 4px;
+  border-bottom: 1px solid #eff3f4;
+}
+.mymy-ui .kzxb {
+  flex: 1;
+  min-width: 0;
+}
+.mymy-ui .kzxn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14.5px;
+  line-height: 19px;
+  white-space: nowrap;
+}
+.mymy-ui .kzxn b {
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%;
+  flex: none;
+}
+.mymy-ui .kzxn small {
+  color: #536471;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mymy-ui .kzxn em {
+  margin-left: auto;
+  font-style: normal;
+  color: #536471;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.mymy-ui .kzxx {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 2px 0 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.mymy-ui .kzxac {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #536471;
+  font-size: 12.5px;
+  padding: 2px 0 10px;
+  margin-right: 6px;
+}
+.mymy-ui .kzxac span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1;
+}
+.mymy-ui .kzxac svg {
+  width: 18px;
+  height: 18px;
+}
+.mymy-ui .kzxnav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 78px;
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid #eff3f4;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  z-index: 3;
+}
+.mymy-ui .kzxnav span {
+  width: 44px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.mymy-ui .kzxnav svg {
+  width: 26px;
+  height: 26px;
+}
+.mymy-ui .kzxv {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1000/806;
+  background: #000;
+}
+.mymy-ui .kzxv video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mymy-ui .kzxx b {
+  font-weight: 700;
+}
+.mymy-ui .kzm.kzot .kzmav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+.mymy-ui .kzm.kzot .kzmav .kzka {
+  margin: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 13px;
+}
+.mymy-ui .kzm.kzot {
+  padding-left: 44px;
+}
+.mymy-ui .igb.kzrf {
+}
+.mymy-ui .kzxx {
+  white-space: pre-line;
+}

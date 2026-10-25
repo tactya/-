@@ -1,0 +1,196 @@
+{
+  "results": {
+    "messages": {
+      "file": "messages.png",
+      "sha256": "c54e383eead22cc0e1a4697a72ae7243766fdd7bab7eb75622c3a7b6f9e80c94"
+    },
+    "appstore": {
+      "file": "appstore.png",
+      "sha256": "e63e8db231f35a9ed7076deb5bec1ea516f6b5429626c5b3386c298c343338b7"
+    },
+    "photos": {
+      "file": "photos.png",
+      "sha256": "e9fc87f3c46264481680f4e2fb3e1f94575ed67850c0571426736c490d1aab4f"
+    },
+    "contacts": {
+      "file": "contacts.png",
+      "sha256": "1ab7f2c6a799b3a6ff13ff72188678dac321c979132cd2e785dcc3eacecb2da7"
+    },
+    "calendar": {
+      "file": "calendar.png",
+      "sha256": "7afb66d0188f20b7afc5ae5d62a843ab89de1acad4d014cb90d58f718e5ba655"
+    },
+    "camera": {
+      "file": "camera.png",
+      "sha256": "7cd8b74e81ab87efc393bcdc321a724d7a031e5c4b0336480d28afd49f04446e"
+    },
+    "clock": {
+      "file": "clock.png",
+      "sha256": "ff07b085572bf36dc337bb504715ef661effe084ecb392d1062f3dee3a703496"
+    },
+    "notes": {
+      "file": "notes.png",
+      "sha256": "5182b74a7547bd43595a4ce8f65363898dfe390578a5f106f3277faa17be8fd1"
+    },
+    "files": {
+      "file": "files.png",
+      "sha256": "d80d6275a389933e6a6e8d6630470c644b77bd8a2b5983d43c5fc824cc39710d"
+    },
+    "music": {
+      "file": "music.png",
+      "sha256": "e2ffbaed2b9bb7da84382dcf7ad851eff2b031f950fa53e10526b79f819722c0"
+    },
+    "weather": {
+      "file": "weather.png",
+      "sha256": "32f971e3105bcb3470b67301900add09b8e4c46760a33bf295dcb1d7e6b62992"
+    },
+    "maps": {
+      "file": "maps.png",
+      "sha256": "901f3a60056e9e0f377f55fae0170c28c749b5d3e311ae447b526805e7da7323"
+    },
+    "wallet": {
+      "file": "wallet.png",
+      "sha256": "50389796d4ed0870dc5333a32ad29e66e42aee12deb38c912970bd75bb087a5e"
+    },
+    "health": {
+      "file": "health.png",
+      "sha256": "9bd29f4ec7d437d6346e520d74cb2fd39b2db3fe9731090f4c48110305fd202e"
+    },
+    "find": {
+      "file": "find.png",
+      "sha256": "2f6c6e09477cb998862644086d5a43a079013d6ad8b3a4cd4594221118ea60b7"
+    },
+    "calculator": {
+      "file": "calculator.png",
+      "sha256": "cf2289d73eb5ea4a8b42f705546de0456e506804d8569664c85c6a309a496bb3"
+    },
+    "mail": {
+      "file": "mail.png",
+      "sha256": "5ef4ff0ae4b585ecb8ca6305c604f0c66b9a741dace58d173135cbb6ee5afe27"
+    },
+    "settings": {
+      "file": "settings.png",
+      "sha256": "6be74af5f712ded989c813a7f6ba9c41e49c658f766bfee3318c67f27841afea"
+    },
+    "phone": {
+      "file": "phone.png",
+      "sha256": "0eec9027f6adc0f490b4a291af664b6af9d0a16ef57007ad99ef5de8d2e67ab2"
+    },
+    "safari": {
+      "file": "safari.png",
+      "sha256": "a3bc2be623865d8f319a6857e718113898b6b99b0f16030efc50dab82bcca0d6"
+    },
+    "threads": {
+      "file": "threads.png",
+      "sha256": "681828100b7cfc7418ce4ef9373356e30db0c211bdbded69661cd90f1065a7f5"
+    },
+    "twitter": {
+      "file": "twitter.svg",
+      "sha256": "44dd71701469d42b3e31c7f618021488f6c1b92998204ea2ee1781a0e3b5138a"
+    },
+    "telegram": {
+      "file": "telegram.png",
+      "sha256": "69e3303080d917d2e4388dced6fe254f6ee2854812a808b9e3ddd7203088a52d"
+    },
+    "instagram": {
+      "file": "instagram.png",
+      "sha256": "b97f0c0b70f7866b8c045ee01bd087b63921c021afd87432f0eb723c33f4837c"
+    },
+    "youtube": {
+      "file": "youtube.png",
+      "sha256": "44b71d32b63a3aa53a5b4f13d278a500fdb8def9576b5be16844c91f74ab802f"
+    },
+    "discord": {
+      "file": "discord.png",
+      "sha256": "06590596dc6b6db19218c7b7378e8e48c1d162ac9d05f3aadf53a9427de61e65"
+    },
+    "facebook": {
+      "file": "facebook.png",
+      "sha256": "6f5ee01a897a2d2c41f1724e56d8233ef80cca77ff9ca0ad4e605c3746229a24"
+    },
+    "messenger": {
+      "file": "messenger.png",
+      "sha256": "572c10d610cd8834c8f2131a268ce841cc5a22e3fb85a15c67e968da2e8d69ef"
+    },
+    "reddit": {
+      "file": "reddit.png",
+      "sha256": "d94e5831b5529597e65d28acd241a01d24ea60e251aac0759baa7abdbfe3d4fd"
+    },
+    "spotify": {
+      "file": "spotify.png",
+      "sha256": "cf286a00fa1aae97302bbc670f60365e3c72b189090fb646d4a7d0925cba8630"
+    },
+    "tiktok": {
+      "file": "tiktok.png",
+      "sha256": "9a7310079b4f6703f51c8efb3b787ebb58fb709ccdc22d622afa43d0536148f5"
+    },
+    "qq": {
+      "file": "qq.jpg",
+      "sha256": "1f8222dbac93d997aed99baca664d4e16126ad0c6d059b4a74370f43aea9072b"
+    },
+    "wechat": {
+      "file": "wechat.jpg",
+      "sha256": "c191157c5583055e7f2ec19f532b83f80d439f27f3809651151d8e8dcae1b019"
+    },
+    "weibo": {
+      "file": "weibo.jpg",
+      "sha256": "564346c165dea303ffb0765084a4a2d4d6d5d92d2b28c5fc5ea63d5b4fa642bc"
+    },
+    "redbook": {
+      "file": "redbook.jpg",
+      "sha256": "c901c288daf4aeaef0aba5fa02e22c0770a9f39a82233a816dfe5026a834a69d"
+    },
+    "douyin": {
+      "file": "douyin.jpg",
+      "sha256": "c1f6414b95cd4378e2948179489f4ccebcbe637b168ac26f124e32341145ccd6"
+    },
+    "bilibili": {
+      "file": "bilibili.jpg",
+      "sha256": "79a8d2e8470207636549920ce7960d091dd7af14790a1d9cd030fa1636dd38a3"
+    },
+    "alipay": {
+      "file": "alipay.jpg",
+      "sha256": "e291d53c9892b1193d9dbc8df8f7dddf65a4cebcd76f2caf7ed00d36818be60c"
+    },
+    "delivery": {
+      "file": "delivery.jpg",
+      "sha256": "c793ef6681a3d2bd14dbd2713b222059976888cece1af5a7d4d879540450b763"
+    },
+    "netease": {
+      "file": "netease.jpg",
+      "sha256": "25ab1f14333f0bbc087700d381ced1638d9041ee1d2fa4654ed63d66f0e07ecf"
+    },
+    "taobao": {
+      "file": "taobao.jpg",
+      "sha256": "c24d7a86e7b4bc78e2b59465e9ae69ddccb04cc5ec99e56a217fcfc512e3e218"
+    },
+    "whatsapp": {
+      "file": "whatsapp.jpg",
+      "sha256": "3fe86b1ea5754d92339be405d6100bc6f93f130172c1ced37b65f21f6e8f80b8"
+    },
+    "netflix": {
+      "file": "netflix.jpg",
+      "sha256": "eab32637682348a65d41ee197822fef4bef102a0a18cdd3950715e4a4cf45a89"
+    },
+    "pinterest": {
+      "file": "pinterest.jpg",
+      "sha256": "933ec891f3922ab6b63d44cc87556c2bce2bf140d8b1436737ea7a40309753a7"
+    },
+    "snapchat": {
+      "file": "snapchat.jpg",
+      "sha256": "970577f34b765ba77672c87368bda45e9d3c85a6ebbe39870f51af2c66aa21b6"
+    },
+    "line": {
+      "file": "line.jpg",
+      "sha256": "be79e060a89099034924cda9f695923eb0da873675a7ee903bc0f3704d582cae"
+    },
+    "reminders": {
+      "file": "reminders.jpg",
+      "sha256": "05813d23b0c15948b569cd13a230f2826ba97991550fec710d8bc98e3593f029"
+    },
+    "kakao": {
+      "file": "kakao.jpg",
+      "sha256": "1033985cf59d38412bf2bd653844be8471559fa45af3b9479046b6226b10b322"
+    }
+  }
+}

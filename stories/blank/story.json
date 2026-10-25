@@ -1,0 +1,30 @@
+{
+  "scriptVersion": 1,
+  "id": "blank-phone",
+  "title": "捡手机",
+  "description": "",
+  "revision": 1,
+  "phone": {
+    "owner": "机主",
+    "date": "2026-10-25",
+    "time": "09:41",
+    "battery": 94,
+    "network": "5G",
+    "wallpaper": "apple-wwdc26"
+  },
+  "installedApps": [
+    "appstore",
+    "phone",
+    "messages",
+    "photos",
+    "notes",
+    "safari",
+    "settings"
+  ],
+  "contacts": [],
+  "chats": [],
+  "content": {},
+  "variables": {},
+  "events": [],
+  "tests": []
+}

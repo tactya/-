@@ -1,0 +1,7 @@
+FoundPhone Studio — Brand artwork notice
+
+AppArtwork.tsx contains code-drawn visual representations. They are not official icon files, not pixel-identical replacements, and not an endorsement by Apple or any named service. No Apple fonts, SF Symbols package, official bitmap app-icon pack, or official screenshots were embedded.
+
+The MIT license covers this project's source code. It does not grant third-party trademark, trade dress, logo-design or other proprietary rights. Brand names and recognizable marks remain subject to their respective owners' rights. Custom images uploaded by authors retain their own licenses; this project does not relicense them.
+
+Code redraws do not constitute permission from a brand owner. Verify rights for the specific intended redistribution or replace these illustrations with properly authorized assets before publishing a branded distribution. No blanket official-asset clearance is asserted.

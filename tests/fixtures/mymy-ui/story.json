@@ -1,0 +1,170 @@
+{
+  "scriptVersion": 1,
+  "id": "mymy-ui-regression",
+  "title": "UI测试",
+  "revision": 1,
+  "phone": {
+    "owner": "测试机主",
+    "date": "2026-10-25",
+    "time": "09:41",
+    "wallpaper": "silver"
+  },
+  "installedApps": [
+    "phone",
+    "messages",
+    "photos",
+    "notes",
+    "safari",
+    "settings",
+    "contacts",
+    "kakao",
+    "instagram",
+    "twitter"
+  ],
+  "contacts": [
+    {
+      "id": "tester",
+      "name": "测试联系人"
+    }
+  ],
+  "chats": [
+    {
+      "id": "test-kkt-thread",
+      "app": "kakao",
+      "title": "测试会话",
+      "participants": [
+        "owner",
+        "tester"
+      ],
+      "messages": [
+        {
+          "id": "kkt-first",
+          "senderId": "tester",
+          "body": "这是测试消息。"
+        },
+        {
+          "id": "kkt-last",
+          "senderId": "owner",
+          "body": "点击这条测试消息触发来电。"
+        }
+      ]
+    }
+  ],
+  "content": {
+    "instagram": [
+      {
+        "id": "ig-test-post",
+        "title": "测试帖子",
+        "body": "这是一条测试动态。",
+        "sender": "测试用户",
+        "comments": [
+          "测试评论"
+        ],
+        "likes": 1
+      },
+      {
+        "id": "ig-after-call",
+        "title": "联动测试",
+        "body": "挂断后出现的测试动态。",
+        "hidden": true,
+        "sender": "测试用户"
+      },
+      {
+        "id": "ig-test-story",
+        "title": "测试快拍",
+        "body": "这是测试快拍。",
+        "sender": "测试用户",
+        "meta": {
+          "story": "true"
+        }
+      },
+      {
+        "id": "ig-test-dm",
+        "title": "测试私信",
+        "body": "这是一条测试私信。",
+        "sender": "测试用户",
+        "folder": "私信"
+      }
+    ],
+    "twitter": [
+      {
+        "id": "x-test-post",
+        "title": "测试帖子",
+        "body": "这是一条X测试动态。",
+        "sender": "测试用户",
+        "likes": 2,
+        "comments": [
+          "测试回复"
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "read-last",
+      "label": "测试来电",
+      "event": "read",
+      "target": "kkt-last",
+      "actions": [
+        {
+          "type": "call",
+          "key": "test-call",
+          "value": "测试联系人"
+        }
+      ]
+    },
+    {
+      "id": "end-call",
+      "label": "测试联动",
+      "event": "callEnded",
+      "target": "test-call",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ig-after-call",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "read-linked",
+      "label": "联动测试完成",
+      "event": "read",
+      "target": "ig-after-call",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "测试通过"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "KKT到Instagram",
+      "steps": [
+        {
+          "event": "read",
+          "target": "kkt-last"
+        },
+        {
+          "event": "callAnswered",
+          "target": "test-call"
+        },
+        {
+          "event": "callEnded",
+          "target": "test-call"
+        },
+        {
+          "event": "read",
+          "target": "ig-after-call"
+        }
+      ],
+      "ending": "测试通过",
+      "expectUnlocked": [
+        "ig-after-call"
+      ]
+    }
+  ]
+}

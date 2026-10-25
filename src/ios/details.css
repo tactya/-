@@ -1,0 +1,216 @@
+.ios18 .native-detail {
+  height: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #000;
+  font-size: 17px;
+  position: relative;
+}
+.ios18 .native-detail > .app-nav {
+  display: flex !important;
+  min-height: 44px;
+  height: 44px;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  border: 0;
+  background: #fafafae8;
+}
+.ios18 .native-detail > .app-nav button {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: none;
+  border: 0;
+  color: #007aff;
+  font-size: 17px;
+  padding: 0;
+}
+.ios18 .native-detail > .app-nav strong {
+  font-size: 15px;
+}
+.ios18 .native-detail-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 16px;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+}
+.ios18 .native-note-paper {
+  padding: 4px 20px 24px;
+  background: #fffdf8;
+  line-height: 1.5;
+}
+.ios18 .native-note-paper > time {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #8e8e93;
+  margin: 4px 0 20px;
+}
+.ios18 .native-note-paper h1 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+.ios18 .native-detail-notes .app-nav button,
+.ios18 .native-detail-notes .native-detail-toolbar button {
+  color: #bf8500;
+}
+.ios18 .native-detail-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 18px;
+  min-height: 49px;
+  background: #fafafaf5;
+  border-top: 0.5px solid #d1d1d6;
+}
+.ios18 .native-detail-toolbar button {
+  background: none;
+  border: 0;
+  color: #007aff;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+}
+.ios18 .native-detail-toolbar > span {
+  font-size: 12px;
+  color: #8e8e93;
+  flex: 1;
+  text-align: center;
+}
+.ios18 .native-photo-stage {
+  flex: 1;
+  min-height: 0;
+  background: #000;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+.ios18 .native-photo-stage > img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.ios18 .native-photo-caption {
+  padding: 28px;
+  text-align: center;
+  color: #d1d1d6;
+  font-size: 15px;
+}
+.ios18 .native-contact-hero {
+  text-align: center;
+  padding: 12px 0;
+}
+.ios18 .native-contact-hero > span {
+  margin: auto;
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #a4a9b1;
+  color: #fff;
+  font-size: 44px;
+}
+.ios18 .native-contact-hero h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.ios18 .native-contact-actions {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 24px;
+}
+.ios18 .native-contact-actions > button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  color: #007aff;
+  font-size: 13px;
+}
+.ios18 .native-detail-contacts,
+.ios18 .native-detail-phone,
+.ios18 .native-detail-calendar {
+  background: #f2f2f7;
+}
+.ios18 .native-detail-group {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.ios18 .native-detail-group small {
+  font-size: 13px;
+}
+.ios18 .native-detail-group p {
+  margin: 6px 0;
+  white-space: pre-wrap;
+}
+.ios18 .native-blue {
+  color: #007aff;
+}
+.ios18 .native-event-paper h1 {
+  font-size: 28px;
+  line-height: 34px;
+  margin: 6px 0 12px;
+}
+.ios18 .native-reader {
+  font-family: Georgia, serif;
+  line-height: 1.65;
+  padding: 24px;
+}
+.ios18 .native-reader-address {
+  margin: 8px 16px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #e9e9eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.ios18 .native-file-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+.ios18 .native-action-sheet {
+  position: absolute;
+  right: 12px;
+  top: 44px;
+  z-index: 9;
+  background: #f2f2f7f5;
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  box-shadow: 0 5px 25px #0003;
+  min-width: 170px;
+  overflow: hidden;
+}
+.ios18 .native-action-sheet > button {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 16px;
+  border: 0;
+  border-bottom: 0.5px solid #aaa7;
+  background: none;
+  color: #007aff;
+}
